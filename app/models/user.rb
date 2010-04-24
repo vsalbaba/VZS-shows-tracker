@@ -34,7 +34,7 @@ class User < ActiveRecord::Base
 
   private
   def self.encrypt_password(pass)
-    Digest::MD5.hexdigest(pass)
+    Digest::MD5.hexdigest Iconv.conv('windows-1250', 'utf-8', pass)
   end
 
   def self.build_url_for(login, pass)
