@@ -16,9 +16,9 @@ class User < ActiveRecord::Base
     doc = Nokogiri::XML xml
     return nil unless doc.search('error').empty?
     params = {
-      :name => doc.search('name').first.content,
-      :surname => doc.search('surname').first.content,
-      :auth_level => doc.search('role').first.content
+      :name => convert_to_utf8(doc.search('name').first.content),
+      :surname => convert_to_utf8(doc.search('surname').first.content),
+      :auth_level => convert_to_utf8(doc.search('role').first.content)
     }
     if user = User.find_by_vzs_id(user_vzs_id) then
       user.update_attributes!(params)
@@ -35,6 +35,10 @@ class User < ActiveRecord::Base
 
   def self.build_url_for(login, pass)
     "http://www.trebic.vzs.cz/authentication_proxy.php?user_id=#{login}&password_hash=#{encrypt_password(pass)}"
+  end
+
+  def self.convert_to_utf8(string)
+    Iconv.conv('utf-8', 'windows-1250', string)
   end
 end
 
