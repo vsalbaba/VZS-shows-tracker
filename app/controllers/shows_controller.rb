@@ -15,7 +15,7 @@ class ShowsController < ApplicationController
   def create
     @show = Show.new(params[:show])
     if @show.save
-      flash[:notice] = "Successfully created show."
+      flash[:notice] = "Ukázka vytvořena"
       redirect_to @show
     else
       render :action => 'new'
@@ -29,7 +29,7 @@ class ShowsController < ApplicationController
   def update
     @show = Show.find(params[:id])
     if @show.update_attributes(params[:show])
-      flash[:notice] = "Successfully updated show."
+      flash[:notice] = "Ukázka aktualizována"
       redirect_to @show
     else
       render :action => 'edit'
@@ -39,7 +39,7 @@ class ShowsController < ApplicationController
   def destroy
     @show = Show.find(params[:id])
     @show.destroy
-    flash[:notice] = "Successfully destroyed show."
+    flash[:notice] = "Ukázka smazána"
     redirect_to shows_url
   end
 end
