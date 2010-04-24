@@ -1,0 +1,25 @@
+cz:
+  activerecord:
+    models:
+      show: Ukázka
+    attributes:
+      show:
+        name: Název
+        date: Datum
+        meet_time: Sraz v
+        end_time: Konec v
+        payed_hours: Placených hodin
+        people: Počet lidí
+        meet_at: Sraz
+        contact: Kontakt
+        breakfast: Snídaně
+        lunch: Oběd
+        dinner: Večeře
+        notes: Poznámky
+        description: Popis
+  formtastic:
+    actions:
+      show:
+        create: Přidat ukázku
+        update: Upravit ukázku
+

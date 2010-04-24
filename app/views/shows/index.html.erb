@@ -1,20 +1,12 @@
 <% title "Ukázky" %>
 
-<table>
-  <tr>
-    <th>Název</th>
-    <th>Datum</th>
-  </tr>
-  <% for show in @shows %>
-    <tr>
-      <td><%=h show.name %></td>
-      <td><%=h show.date %></td>
-      <td><%= link_to "Zobrazit", show %></td>
-      <td><%= link_to "Editovat", edit_show_path(show) %></td>
-      <td><%= link_to "smazat", show, :confirm => 'Opravdu?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
+<% paginated_section @shows do -%>
+<hr />
+  <% for show in @shows do -%>
+    <%= render show %>
+  <% end -%>
+<hr />
+<% end %>
 
 <p><%= link_to "Nová ukázka", new_show_path %></p>
 

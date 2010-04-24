@@ -1,7 +1,19 @@
 class ShowsController < ApplicationController
   before_filter :login_required
   def index
-    @shows = Show.all
+    @shows = Show.all.paginate(:page => params[:page])
+  end
+
+  def join
+    @show = Show.find(params[:id])
+    @show.users << current_user
+    redirect_to :action => 'show'
+  end
+
+  def kick
+    @show = Show.find(params[:id])
+    @show.users.delete User.find(params[:user_id])
+    redirect_to :action => 'show'
   end
 
   def show

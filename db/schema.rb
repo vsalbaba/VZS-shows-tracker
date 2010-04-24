@@ -9,21 +9,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100424092337) do
+ActiveRecord::Schema.define(:version => 20100424114605) do
 
   create_table "shows", :force => true do |t|
     t.string   "name"
-    t.datetime "date"
+    t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.time     "meet_time"
+    t.time     "end_time"
+    t.integer  "payed_hours"
+    t.integer  "people"
+    t.string   "meet_at"
+    t.string   "contact"
+    t.boolean  "breakfast"
+    t.boolean  "lunch"
+    t.boolean  "dinner"
+    t.text     "notes"
+    t.text     "description"
   end
+
+  create_table "shows_users", :id => false, :force => true do |t|
+    t.integer "show_id"
+    t.integer "user_id"
+  end
+
+  add_index "shows_users", ["show_id"], :name => "index_shows_users_on_show_id"
+  add_index "shows_users", ["user_id"], :name => "index_shows_users_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "surname"
     t.string   "vzs_id"
     t.integer  "auth_level"
-    t.string   "password_hash"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
