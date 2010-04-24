@@ -1,33 +1,40 @@
 class User < ActiveRecord::Base
   # new columns need to be added here to be writable through mass assignment
-  attr_accessible :vzs_id, :password, :password_confirmation
+  attr_accessible :vzs_id, :name, :surname, :auth_level
 
-  attr_accessor :password
-  before_save :prepare_password
-
-  validates_presence_of :vzs_id
+  validates_presence_of :vzs_id, :name, :surname, :auth_level
   validates_uniqueness_of :vzs_id
 
   # login can be either username or email address
   def self.authenticate(login, pass)
-    user = find_by_username(login) || find_by_email(login)
-    return user if user && user.matching_password?(pass)
+    url = build_url_for(login, pass)
+    xml = open url
+    User.find_or_create_from_xml(login, xml)
   end
 
-  def matching_password?(pass)
-    self.password_hash == encrypt_password(pass)
+  def self.find_or_create_from_xml(user_vzs_id, xml)
+    doc = Nokogiri::XML xml
+    return nil unless doc.search('error').empty?
+    params = {
+      :name => doc.search('name').first.content,
+      :surname => doc.search('surname').first.content,
+      :auth_level => doc.search('role').first.content
+    }
+    if user = User.find_by_vzs_id(user_vzs_id) then
+      user.update_attributes!(params)
+    else
+      user = User.create(params.merge :vzs_id => user_vzs_id)
+    end
+    user
   end
 
   private
-
-  def prepare_password
-    unless password.blank?
-      self.password_hash = encrypt_password(password)
-    end
+  def self.encrypt_password(pass)
+    Digest::MD5.hexdigest(pass)
   end
 
-  def encrypt_password(pass)
-    Digest::MD5.hexdigest(pass)
+  def self.build_url_for(login, pass)
+    "http://www.trebic.vzs.cz/authentication_proxy.php?user_id=#{login}&password_hash=#{encrypt_password(pass)}"
   end
 end
 

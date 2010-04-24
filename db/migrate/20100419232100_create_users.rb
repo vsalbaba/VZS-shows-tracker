@@ -5,7 +5,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :surname
       t.string :vzs_id
       t.integer :auth_level
-      t.string :password_hash
       t.timestamps
     end
   end
