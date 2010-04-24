@@ -9,7 +9,7 @@
   <body>
     <div id="container">
       <% if logged_in? %>
-        Vojtěch Šalbaba
+        <%= current_user.full_name %>
       <%= link_to "Odhlásit", logout_path %>
       <% else %>
         <%= link_to "Přihlásit", login_path %>.

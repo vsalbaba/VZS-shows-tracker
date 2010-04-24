@@ -28,6 +28,10 @@ class User < ActiveRecord::Base
     user
   end
 
+  def full_name
+    @full_name ||= "#{self.name} #{self.surname}"
+  end
+
   private
   def self.encrypt_password(pass)
     Digest::MD5.hexdigest(pass)
