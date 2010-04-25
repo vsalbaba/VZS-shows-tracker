@@ -11,7 +11,7 @@
 <ul>
   <li>Sraz v <%= l(@show.meet_time, :format => :extra_short) %>, návrat v <%= l(@show.end_time, :format => :extra_short) %></li>
   <li>Místo srazu: <%= h @show.meet_at %></li>
-  <li>Zajištěné jídlo: <%= food_for(@show) %></li>
+  <li>Jídlo: <%= food_for(@show) %></li>
   <li>Odměna: <%= reward(@show) %></li>
   <li>Lidí: <%= h @show.people %></li>
   <li>Kontakt: <%= h @show.contact %> </li>
@@ -27,7 +27,7 @@
   Na ukázku jsou nahlášeni:
   <ol>
   <% for user in @show.users -%>
-    <li><%= user.full_name %>(<%= link_to 'Odhlásit!', kick_show_path(@show, :user_id => user.id), :confirm => "Opravdu vyhodit #{user.full_name} z ukázky?", :method => :put %>)</li>
+    <li><%= user.full_name %>(<%= link_to 'Odhlásit', kick_show_path(@show, :user_id => user.id), :confirm => "Opravdu vyhodit #{user.full_name} z ukázky?", :method => :put %>)</li>
   <% end -%>
   </ol>
 </p>

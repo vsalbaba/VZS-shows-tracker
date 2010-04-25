@@ -4,6 +4,9 @@ module ShowsHelper
     food << 'snídaně' if show.breakfast
     food << 'oběd' if show.lunch
     food << 'večeře' if show.dinner
+    if food.empty?
+      food << 'nezajištěno'
+    end
     food.to_sentence
   end
 
