@@ -8,7 +8,7 @@ cz:
         date: Datum
         meet_time: Sraz v
         end_time: Konec v
-        payed_hours: Placených hodin
+        payed_hours: Pracovních hodin
         people: Počet lidí
         meet_at: Sraz
         contact: Kontakt
@@ -17,6 +17,7 @@ cz:
         dinner: Večeře
         notes: Poznámky
         description: Popis
+        paid: Placená?
   formtastic:
     actions:
       show:

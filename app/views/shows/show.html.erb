@@ -12,7 +12,7 @@
   <li>Sraz v <%= l(@show.meet_time, :format => :extra_short) %>, návrat v <%= l(@show.end_time, :format => :extra_short) %></li>
   <li>Místo srazu: <%= h @show.meet_at %></li>
   <li>Zajištěné jídlo: <%= food_for(@show) %></li>
-  <li>Odměna: cca <%= number_to_currency(@show.pay) %></li>
+  <li>Odměna: <%= reward(@show) %></li>
   <li>Lidí: <%= h @show.people %></li>
   <li>Kontakt: <%= h @show.contact %> </li>
 </ul>
