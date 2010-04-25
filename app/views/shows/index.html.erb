@@ -1,11 +1,21 @@
 <% title "Ukázky" %>
 
 <% paginated_section @shows do -%>
-<hr />
-  <% for show in @shows do -%>
-    <%= render show %>
-  <% end -%>
-<hr />
+  <hr />
+  <table>
+    <tr>
+      <th>Datum</th>
+      <th>Název</th>
+      <th>Sraz</th>
+      <th>Návrat</th>
+      <th>Typ ukázky</th>
+      <th>Lidí</th>
+    </tr>
+    <% for show in @shows do -%>
+      <%= render show %>
+    <% end -%>
+  </table>
+  <hr />
 <% end %>
 
 <p><%= link_to "Nová ukázka", new_show_path %></p>

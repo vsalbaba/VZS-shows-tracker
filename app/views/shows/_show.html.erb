@@ -1,4 +1,10 @@
-<% div_for show do-%>
-  <%= link_to "#{l show.date} - #{h show.name}", show %>
-<% end -%>
+<tr>
+  <td><%= l show.date %></td>
+  <td><strong><%= h show.name %></strong></td>
+  <td><%= l(show.meet_time, :format => :extra_short) %> <%= h show.meet_at %></td>
+  <td><%= l(show.end_time, :format => :extra_short) %></td>
+  <td><%= h show.description %></td>
+  <td><%= h show.people %></td>
+  <td><%= link_to 'Podrobnosti', show %></td>
+</tr>
 
