@@ -4,16 +4,16 @@
     <%= f.input :name, :hint => 'Například: Myslibořice' %>
     <%= f.input :date %>
     <%= f.input :meet_time, :minute_step => 15 %>
-    <%= f.input :payed_hours, :minute_step => 'Například: 8' %>
-    <%= f.input :end_time, :minute_step => 15 %>
     <%= f.input :meet_at, :hint => 'Například: Polanka 24' %>
+    <%= f.input :end_time, :minute_step => 15 %>
+    <%= f.input :payed_hours, :minute_step => 'Například: 8' %>
     <%= f.input :people, :hint => 'Například: 5' %>
     <%= f.input :contact %>
     <%= f.input :breakfast %>
     <%= f.input :lunch %>
     <%= f.input :dinner %>
     <%= f.input :notes %>
-    <%= f.input :description %>
+    <%= f.input :description, :hint => 'Krátce a výstižně, max pěti slovy' %>
   <% end -%>
   <%= f.buttons %>
 <% end %>
