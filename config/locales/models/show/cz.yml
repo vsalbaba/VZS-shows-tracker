@@ -17,7 +17,7 @@ cz:
         dinner: Večeře
         notes: Poznámky
         description: Popis
-        paid: Placená?
+        paid: Druh
   formtastic:
     actions:
       show:
