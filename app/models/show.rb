@@ -7,8 +7,8 @@ class Show < ActiveRecord::Base
 
   validates_presence_of :name, :date
 
-  has_and_belongs_to_many :users, :uniq => true
-
+  has_many :users, :through => :subscriptions
+  has_many :subscriptions
   HOUR_RATE = 30
 
   def pay

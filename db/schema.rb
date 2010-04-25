@@ -30,13 +30,15 @@ ActiveRecord::Schema.define(:version => 20100425193409) do
     t.boolean  "paid"
   end
 
-  create_table "shows_users", :id => false, :force => true do |t|
-    t.integer "show_id"
-    t.integer "user_id"
+  create_table "subscriptions", :force => true do |t|
+    t.integer  "show_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  add_index "shows_users", ["show_id"], :name => "index_shows_users_on_show_id"
-  add_index "shows_users", ["user_id"], :name => "index_shows_users_on_user_id"
+  add_index "subscriptions", ["show_id"], :name => "index_subscriptions_on_show_id"
+  add_index "subscriptions", ["user_id"], :name => "index_subscriptions_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"

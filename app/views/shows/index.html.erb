@@ -16,6 +16,7 @@
   </table>
   <hr />
 <% end %>
-
+<% if can? :create, Show then -%>
 <p><%= link_to "Nová ukázka", new_show_path %></p>
+<% end -%>
 

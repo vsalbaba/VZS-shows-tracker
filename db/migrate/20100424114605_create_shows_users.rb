@@ -1,16 +1,17 @@
 class CreateShowsUsers < ActiveRecord::Migration
   def self.up
-    create_table :shows_users, :id => false do |t|
+    create_table :subscriptions do |t|
       t.belongs_to :show
       t.belongs_to :user
+      t.timestamps
     end
 
-    add_index :shows_users, :show_id
-    add_index :shows_users, :user_id
+    add_index :subscriptions, :show_id
+    add_index :subscriptions, :user_id
   end
 
   def self.down
-    drop_table :shows_users
+    drop_table :subscriptions
   end
 end
 

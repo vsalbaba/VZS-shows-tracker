@@ -6,7 +6,11 @@ class ShowsController < ApplicationController
 
   def join
     @show = Show.find(params[:id])
-    @show.users << current_user
+    begin
+      @show.users << current_user
+    rescue Exception => e
+      flash[:error] = 'Na ukázku se již nelze přihlásit'
+    end
     redirect_to :action => 'show'
   end
 
