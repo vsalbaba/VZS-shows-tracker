@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
     user = User.authenticate(params[:login], params[:password])
     if user
       session[:user_id] = user.id
-      flash[:notice] = "Přihlášení proběhlo úspěšně"
       redirect_to_target_or_default(root_url)
     else
       flash.now[:error] = "Neplatné přihlašovací jméno nebo heslo"

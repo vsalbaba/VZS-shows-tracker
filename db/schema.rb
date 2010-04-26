@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100425193409) do
+ActiveRecord::Schema.define(:version => 20100426100727) do
 
   create_table "shows", :force => true do |t|
     t.string   "name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20100425193409) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "subscribed"
   end
 
   add_index "subscriptions", ["show_id"], :name => "index_subscriptions_on_show_id"

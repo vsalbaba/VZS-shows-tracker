@@ -13,7 +13,12 @@ class User < ActiveRecord::Base
   end
 
   def subscribed_to?(show)
-    self.shows.exists?(show)
+    subscription = self.subscriptions.find(:first, :conditions => {:show_id => show.id})
+    if subscription then
+      subscription.subscribed
+    else
+      nil
+    end
   end
 
   # login can be either username or email address

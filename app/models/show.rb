@@ -11,6 +11,10 @@ class Show < ActiveRecord::Base
   has_many :subscriptions
   HOUR_RATE = 30
 
+  def subscribed_count
+    self.subscriptions.find_all_by_subscribed(true).count
+  end
+
   def pay
     payed_hours.to_i * HOUR_RATE
   end

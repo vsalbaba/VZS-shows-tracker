@@ -6,10 +6,15 @@ class ShowsController < ApplicationController
 
   def join
     @show = Show.find(params[:id])
-    begin
-      @show.users << current_user
-    rescue Exception => e
-      flash[:error] = 'Na ukázku se již nelze přihlásit'
+    @subscription = Subscription.new(:user_id => current_user.id, :show_id => @show.id, :subscribed => params[:subscribed])
+    if @subscription.save then
+      if @subscription.subscribed then
+        flash[:notice] = 'Byli jste přihlášeni na ukázku. Pokud se budete chtít odhlásit, napište vedoucímu ukázky'
+      else
+        flash[:notice] = 'Zaznamenali jsme si, že na ukázku nemůžete jet. Svoje rozhodnutí můžete kdykoli změnit.'
+      end
+    else
+      flash[:error] = 'Na ukázku vás nebylo možno přihlásit'
     end
     redirect_to :action => 'show'
   end

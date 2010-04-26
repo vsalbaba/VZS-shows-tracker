@@ -1,86 +1,67 @@
 body {
-  background-color: #4B7399;
+  background-color: #4b7399;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
 }
-
-#login_box {
-  text-align: right;
-}
-
-a img {
-  border: none;
-}
-
-a {
-  color: #0000FF;
-}
-
+#login_box { text-align: right; }
+.subscribed { background-color: #90cfb8; }
+.not_subscribed { background-color: #f5d7ab; }
+a { color: #0000ff; }
+a img { border: none; }
 .clear {
   clear: both;
   height: 0;
   overflow: hidden;
 }
-
 #container {
   width: 85%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #ffffff;
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
 }
-
-#flash_notice, #flash_error {
+#flash {
   padding: 5px 8px;
   margin: 10px 0;
 }
-
 #flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
+  padding: 5px 8px;
+  margin: 10px 0;
+  background-color: #ccffcc;
+  border: solid 1px #66cc66;
 }
-
 #flash_error {
-  background-color: #FCC;
-  border: solid 1px #C66;
+  padding: 5px 8px;
+  margin: 10px 0;
+  background-color: #ffcccc;
+  border: solid 1px #cc6666;
 }
-
-.fieldWithErrors {
-  display: inline;
-}
-
+.fieldWithErrors { display: inline; }
 #errorExplanation {
   width: 400px;
-  border: 2px solid #CF0000;
+  border: 2px solid #cf0000;
   padding: 0px;
   padding-bottom: 12px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-
 #errorExplanation h2 {
   text-align: left;
   font-weight: bold;
   padding: 5px 5px 5px 15px;
   font-size: 12px;
   margin: 0;
-  background-color: #c00;
-  color: #fff;
+  background-color: #cc0000;
+  color: #ffffff;
 }
-
 #errorExplanation p {
-  color: #333;
+  color: #333333;
   margin-bottom: 0;
   padding: 8px;
 }
-
-#errorExplanation ul {
-  margin: 2px 24px;
-}
-
+#errorExplanation ul { margin: 2px 24px; }
 #errorExplanation ul li {
   font-size: 12px;
   list-style: disc;
 }
-
