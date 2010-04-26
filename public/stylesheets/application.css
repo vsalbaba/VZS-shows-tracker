@@ -1,7 +1,11 @@
 body {
-  background-color: #000099;
+  background-color: #4B7399;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
+}
+
+#login_box {
+  text-align: right;
 }
 
 a img {
@@ -19,7 +23,7 @@ a {
 }
 
 #container {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   background-color: #FFF;
   padding: 20px 40px;

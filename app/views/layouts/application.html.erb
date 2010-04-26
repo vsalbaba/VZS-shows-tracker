@@ -9,10 +9,12 @@
   </head>
   <body>
     <div id="container">
-      <% if logged_in? %>
-        <%= current_user.full_name %>
-        <%= link_to "Odhlásit", logout_path %>
-      <% end %>
+      <div id="login_box">
+        <% if logged_in? %>
+          <%= current_user.full_name %>
+          <%= link_to "Odhlásit", logout_path %>
+        <% end %>
+      </div>
 
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
