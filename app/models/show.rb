@@ -12,7 +12,7 @@ class Show < ActiveRecord::Base
   HOUR_RATE = 30
 
   def subscribed_count
-    self.subscriptions.find_all_by_subscribed(true).count
+    self.subscriptions.find_all_by_subscribed(true).size
   end
 
   def pay
