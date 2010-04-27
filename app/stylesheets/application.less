@@ -4,8 +4,57 @@ body {
   font-size: 14px;
 }
 
+.center {
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  min-width: 600px;
+  margin-bottom: 7px;
+  border: 1px solid #6699cc;
+}
+
+thead {
+  tr {
+    background-color: #8BB3C9;
+    color: #003399;
+
+    th {
+      text-align: center;
+      padding: 8px 5px 8px 5px;
+    }
+
+    td {
+      padding: 0px 3px 8px 3px;
+    }
+  }
+}
+
+tbody {
+  tr {
+    color: #756d99;
+    border-top: 1px solid white;
+    td {
+      padding: 8px 5px;
+    }
+  }
+
+  tr:hover {
+    color: #003399;
+    border-top: 1px solid white;
+  }
+}
+
 #login_box {
   text-align: right;
+}
+#table_hint {
+  text-align: right;
+  .subscribed, .not_subscribed {
+    margin-right: 5px;
+    padding: 3px;
+  }
 }
 
 .subscribed {
@@ -15,7 +64,6 @@ body {
 .not_subscribed {
   background-color: #F5D7AB;
 }
-
 
 a {
   color: #0000FF;
@@ -32,6 +80,7 @@ a {
 
 #container {
   width: 85%;
+  min-width: 800px;
   margin: 0 auto;
   background-color: #FFF;
   padding: 20px 40px;
