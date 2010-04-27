@@ -1,9 +1,5 @@
-<% title "Ukázka" %>
+<% title @show.name %>
 
-<p>
-  <strong>Název:</strong>
-  <%=h @show.name %>
-</p>
 <%= subscribed_notice @show, current_user %>
 <p>
   <strong>Datum:</strong>
