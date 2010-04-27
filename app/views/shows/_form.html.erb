@@ -4,7 +4,7 @@
     <%= f.input :name, :hint => 'Například: Myslibořice' %>
     <%= f.input :date %>
     <%= f.input :meet_time, :minute_step => 15 %>
-    <%= f.input :meet_at, :hint => 'Například: Polanka 24' %>
+    <%= f.input :meet_at, :hint => 'Například: klubovna. Pokud je míst setkání víc, zadejte hlavní z nich a ostatní vypište do poznámek.' %>
     <%= f.input :end_time, :minute_step => 15 %>
     <%= f.input :payed_hours, :minute_step => 'Například: 8' %>
     <%= f.input :paid, :as => :radio, :collection => [["Brigádnické hodiny", false], ["Placená", true]] %>
@@ -14,7 +14,7 @@
     <%= f.input :lunch %>
     <%= f.input :dinner %>
     <%= f.input :description, :hint => 'Krátce a výstižně, max pěti slovy', :as => :string %>
-    <%= f.input :notes %>
+    <%= f.input :notes, :hint => 'Můžete používat i html tagy, například seznamy' %>
   <% end -%>
   <%= f.buttons %>
 <% end %>
