@@ -1,4 +1,5 @@
 <% title @show.name %>
+<%= h @show.description %>
 
 <%= subscribed_notice @show, current_user %>
 <p>
@@ -13,12 +14,9 @@
   <li>Lidí: <%= h @show.subscribed_count %>/<%= h @show.people %></li>
   <li>Kontakt: <%= h @show.contact %> </li>
 </ul>
-
+<h2>Poznámky</h2>
 <p>
-  <%= h @show.description %>
-</p>
-<p>
-  <%= h @show.notes %>
+  <%= sanitize @show.notes %>
 </p>
 <p>
   Na ukázku jsou nahlášeni:
