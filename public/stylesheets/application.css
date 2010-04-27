@@ -9,20 +9,20 @@
 
 
 */body {
-  background-color: #4b7399;
+  background-color: #183f63;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
 }
 .center { text-align: center; }
 table {
-  width: 80%;
+  width: 100%;
   min-width: 600px;
   margin-bottom: 7px;
   border: 1px solid #6699cc;
 }
 thead tr {
-  background-color: #8bb3c9;
-  color: #003399;
+  background-color: #000000;
+  color: #ffffff;
 }
 thead tr th {
   text-align: center;
@@ -32,6 +32,7 @@ thead tr td { padding: 0px 3px 8px 3px; }
 tbody tr {
   color: #756d99;
   border-top: 1px solid white;
+  border-color: #0000ff;
 }
 tbody tr td { padding: 8px 5px; }
 tbody tr:hover {
@@ -42,14 +43,16 @@ tbody tr:hover {
 #table_hint { text-align: right; }
 #table_hint .subscribed {
   margin-right: 5px;
+  margin-left: 5px;
   padding: 3px;
 }
 #table_hint .not_subscribed {
   margin-right: 5px;
+  margin-left: 5px;
   padding: 3px;
 }
-.subscribed { background-color: #90cfb8; }
-.not_subscribed { background-color: #f5d7ab; }
+.subscribed { background-color: #33ff00; }
+.not_subscribed { background-color: #ff9900; }
 a { color: #0000ff; }
 a img { border: none; }
 .clear {
@@ -60,6 +63,7 @@ a img { border: none; }
 #container {
   width: 85%;
   min-width: 800px;
+  height: 95%;
   margin: 0 auto;
   background-color: #ffffff;
   padding: 20px 40px;
