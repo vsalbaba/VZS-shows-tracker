@@ -2,4 +2,5 @@ formtastic
 nokogiri
 will_paginate
 cancan
+RedCloth
 

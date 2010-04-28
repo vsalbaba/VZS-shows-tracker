@@ -12,6 +12,7 @@ Rails::Initializer.run do |config|
   config.gem 'nokogiri'
   config.gem 'will_paginate'
   config.gem 'cancan'
+  config.gem 'RedCloth'
 
   config.time_zone = 'UTC'
 

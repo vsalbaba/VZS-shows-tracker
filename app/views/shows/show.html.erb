@@ -16,7 +16,7 @@
 </ul>
 <h2>Poznámky</h2>
 <p>
-  <%= sanitize @show.notes %>
+  <%= RedCloth.new(@show.notes).to_html %>
 </p>
 <p>
   Na ukázku jsou nahlášeni:
