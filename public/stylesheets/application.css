@@ -52,6 +52,14 @@ tbody tr:hover {
   margin-left: 5px;
   padding: 3px;
 }
+.slight_padding .subscribed {
+  margin: 5px;
+  padding: 5px;
+}
+.slight_padding .not_subscribed {
+  margin: 5px;
+  padding: 5px;
+}
 .subscribed { background-color: #33ff00; }
 .not_subscribed { background-color: #ff9900; }
 a { color: #0000ff; }

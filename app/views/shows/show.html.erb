@@ -1,7 +1,8 @@
 <% title @show.name %>
 <%= h @show.description %>
-
-<%= subscribed_notice @show, current_user %>
+<span class="slight_padding">
+  <%= subscribed_notice @show, current_user %>
+</span>
 <p>
   <strong>Datum:</strong>
   <%=l @show.date, :format => :long %>
