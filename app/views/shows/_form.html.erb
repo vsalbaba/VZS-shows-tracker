@@ -14,7 +14,7 @@
     <%= f.input :lunch %>
     <%= f.input :dinner %>
     <%= f.input :description, :hint => 'Krátce a výstižně, max pěti slovy', :as => :string %>
-    <%= f.input :notes, :hint => "Můžete používat syntaxi #{link_to 'Textile', 'http://redcloth.org/textile'}, například seznam vytvoříte přidáním * na začátek řádku" %>
+    <%= f.input :notes, :hint => "Můžete používat syntaxi #{link_to 'Textile', textile_help_path, :target => "_blank"}" %>
   <% end -%>
   <%= f.buttons %>
 <% end %>

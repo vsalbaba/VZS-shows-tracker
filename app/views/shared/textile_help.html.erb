@@ -1,0 +1,47 @@
+<table>
+  <thead>
+    <tr>
+      <th scope=col></th>
+      <th scope=col>Co napíšete</th>
+      <th scope=col>Co se zobrazí</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope=row>
+        Seznamy
+      </th>
+      <td>
+        <pre><%= @list_example %></pre>
+      </td>
+      <td>
+        <%= RedCloth.new(@list_example).to_html %>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope=row>
+        Písmo
+      </th>
+      <td>
+        <pre><%= @emphasis_example %></pre>
+      </td>
+      <td>
+        <%= RedCloth.new(@emphasis_example).to_html %>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope=row>
+        Odkazy
+      </th>
+      <td>
+        <pre><%= @links_example %></pre>
+      </td>
+      <td>
+        <%= RedCloth.new(@links_example).to_html %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
