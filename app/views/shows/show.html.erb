@@ -12,7 +12,7 @@
   <li>Místo srazu: <%= h @show.meet_at %></li>
   <li>Jídlo: <%= food_for(@show) %></li>
   <li>Odměna: <%= reward(@show) %></li>
-  <li>Lidí: <%= h @show.subscribed_count %>/<%= h @show.people %></li>
+  <li>Přihlášených lidí: <%= h show_subscribed_count(@show) %></li>
   <li>Vedoucí: <%= h @show.contact %> </li>
 </ul>
 <h2>Poznámky</h2>

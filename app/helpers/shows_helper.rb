@@ -41,5 +41,9 @@ module ShowsHelper
       end
     end
   end
+
+  def show_subscribed_count(show)
+     show.people ? "#{show.subscribed_count}/#{show.people}" : show.subscribed_count.to_s
+  end
 end
 

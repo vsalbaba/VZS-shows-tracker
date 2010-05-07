@@ -12,7 +12,7 @@ class Subscription < ActiveRecord::Base
 
 
   def number_of_people
-    errors.add(:base, "Prilis mnoho lidi na ukazce") if (self.show.subscribed_count >= self.show.people) and self.subscribed
+    errors.add(:base, "Prilis mnoho lidi na ukazce") if self.subscribed and self.show.people and (self.show.subscribed_count >= self.show.people)
   end
 end
 

@@ -3,6 +3,6 @@
   <td><%= l(show.meet_time, :format => :extra_short) %> <%= h show.meet_at %></td>
   <td class="center"><%= l(show.end_time, :format => :extra_short) %></td>
   <td><%= h show.description %></td>
-  <td class="center"><%= h show.subscribed_count %>/<%= h show.people %></td>
+  <td class="center"><%= h show_subscribed_count(show) %></td>
 </tr>
 
