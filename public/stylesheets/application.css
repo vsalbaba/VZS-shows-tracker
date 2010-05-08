@@ -10,7 +10,7 @@
 
 */body {
   background-color: #183f63;
-  font-family: Verdana, Helvetica, Arial;
+  font-family: Helvetica, Verdana, Arial;
   font-size: 14px;
 }
 .center { text-align: center; }
@@ -60,7 +60,7 @@ tbody tr:hover {
   padding: 5px;
 }
 .subscribed { background-color: #33ff00; }
-.not_subscribed { background-color: #ff9900; }
+.not_subscribed { background-color: #ffe9c9; }
 a { color: #0000ff; }
 a img { border: none; }
 .clear {
