@@ -1,7 +1,7 @@
 cz:
   activerecord:
     models:
-      show: Ukázka
+      show: Akce
     attributes:
       show:
         name: Název
@@ -21,6 +21,6 @@ cz:
   formtastic:
     actions:
       show:
-        create: Přidat ukázku
-        update: Upravit ukázku
+        create: Přidat akci
+        update: Upravit akci
 

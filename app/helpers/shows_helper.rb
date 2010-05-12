@@ -39,9 +39,9 @@ module ShowsHelper
     content_tag :p, :class => subscribed_class(show, user) do
       case user.subscribed_to? show
       when true then
-        'Na tuto ukázku jste přihlášeni'
+        'Na tuto akci jste přihlášeni'
       when false then
-        'Na tuto ukázku jste řekli že nepojedete'
+        'Na tuto akci jste řekli že nepojedete'
       when nil then
         ''
       end
