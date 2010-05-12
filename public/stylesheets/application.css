@@ -59,8 +59,14 @@ tbody tr:hover {
   margin: 5px;
   padding: 5px;
 }
-.subscribed { background-color: #33ff00; }
-.not_subscribed { background-color: #ffe9c9; }
+.subscribed {
+  background-color: #ccffcc;
+  border: solid 1px #66cc66;
+}
+.not_subscribed {
+  background-color: #ffe9c9;
+  border: solid 1px #cc6666;
+}
 a { color: #0000ff; }
 a img { border: none; }
 .clear {
