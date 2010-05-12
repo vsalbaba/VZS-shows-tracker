@@ -11,10 +11,16 @@ module ShowsHelper
   end
 
   def reward(show)
-    if show.paid
-      number_to_currency(@show.pay)
+    if show.payed_hours
+      reward = []
+
+      if show.paid
+        reward << "cca #{number_to_currency(@show.pay)}"
+      end
+      reward << "#{show.payed_hours} brigádnických hodin"
+      reward.join(' nebo ')
     else
-      "#{show.payed_hours} brigádnických hodin"
+      "neurčena"
     end
   end
 
