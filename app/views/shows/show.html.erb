@@ -20,7 +20,7 @@
   <%= RedCloth.new(@show.notes).to_html %>
 </p>
 <p>
-  Na ukázku jsou nahlášeni:
+  Na akci jsou nahlášeni:
   <ol>
   <% for subscription in @show.subscriptions.subscribed -%>
     <li><%= subscription.user.full_name %>
@@ -46,7 +46,7 @@
 
 <p>
  <% unless current_user.shows.exists? @show -%>
-  <%= link_to 'Přihlásit se na ukázku', join_show_path(@show, :subscribed => 'true'), :method => :post, :confirm => 'Jste si jisti? Z ukázky Vás bude moci odhlásit pouze vedoucí' %> |
+  <%= link_to 'Přihlásit se na akci', join_show_path(@show, :subscribed => 'true'), :method => :post, :confirm => 'Jste si jisti? Z ukázky Vás bude moci odhlásit pouze vedoucí' %> |
   <%= link_to 'Na tuto ukázku nemohu jet', join_show_path(@show, :subscribed => 'false'), :method => :post %>
   <% end -%>
 </p>

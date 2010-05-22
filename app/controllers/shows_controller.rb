@@ -9,12 +9,12 @@ class ShowsController < ApplicationController
     @subscription = Subscription.new(:user_id => current_user.id, :show_id => @show.id, :subscribed => params[:subscribed])
     if @subscription.save then
       if @subscription.subscribed then
-        flash[:notice] = 'Byli jste přihlášeni na ukázku. Pokud se budete chtít odhlásit, napište vedoucímu ukázky'
+        flash[:notice] = 'Byli jste přihlášeni na akci. Pokud se budete chtít odhlásit, napište vedoucímu akce'
       else
-        flash[:notice] = 'Zaznamenali jsme si, že na ukázku nemůžete jet. Svoje rozhodnutí můžete kdykoli změnit.'
+        flash[:notice] = 'Zaznamenali jsme si, že na akci nemůžete jet. Svoje rozhodnutí můžete kdykoli změnit.'
       end
     else
-      flash[:error] = 'Na ukázku vás nebylo možno přihlásit'
+      flash[:error] = 'Na akci vás nebylo možno přihlásit'
     end
     redirect_to :action => 'show'
   end
@@ -36,7 +36,7 @@ class ShowsController < ApplicationController
   def create
     @show = Show.new(params[:show])
     if @show.save
-      flash[:notice] = "Ukázka vytvořena"
+      flash[:notice] = "Akce vytvořena"
       redirect_to @show
     else
       render :action => 'new'
@@ -50,7 +50,7 @@ class ShowsController < ApplicationController
   def update
     @show = Show.find(params[:id])
     if @show.update_attributes(params[:show])
-      flash[:notice] = "Ukázka aktualizována"
+      flash[:notice] = "Akce aktualizována"
       redirect_to @show
     else
       render :action => 'edit'
@@ -60,7 +60,7 @@ class ShowsController < ApplicationController
   def destroy
     @show = Show.find(params[:id])
     @show.destroy
-    flash[:notice] = "Ukázka smazána"
+    flash[:notice] = "Akce smazána"
     redirect_to shows_url
   end
 end
