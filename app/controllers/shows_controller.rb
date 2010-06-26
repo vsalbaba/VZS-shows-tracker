@@ -75,7 +75,6 @@ class ShowsController < ApplicationController
   end
 
   def unarchive
-
     @show.unarchive
     if @show.save then
       flash[:notice] = "Akce byla odarchivována"
@@ -85,6 +84,7 @@ class ShowsController < ApplicationController
       redirect_to @show
     end
   end
+
   private
   def find_show
     @show = Show.find(params[:id])

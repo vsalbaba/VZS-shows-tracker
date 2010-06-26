@@ -1,4 +1,7 @@
 <% title @show.name %>
+<% if @show.archived? -%>
+  Tato akce byla archivována
+<% end -%>
 <%= h @show.description %>
 <span class="slight_padding">
   <%= subscribed_notice @show, current_user %>
@@ -45,6 +48,7 @@
 </p>
 
 <p>
+<% unless @show.archived? -%>
  <% unless current_user.shows.exists? @show -%>
   <%= link_to 'Přihlásit se na akci', join_show_path(@show, :subscribed => 'true'), :method => :post, :confirm => 'Jste si jisti? Z ukázky Vás bude moci odhlásit pouze vedoucí' %> |
   <%= link_to 'Na tuto ukázku nemohu jet', join_show_path(@show, :subscribed => 'false'), :method => :post %>
@@ -56,6 +60,8 @@
   <%= link_to "Editovat", edit_show_path(@show) %> |
   <%= link_to 'Archivovat', archive_show_path(@show), :confirm => 'Opravdu archivovat?', :method => :put %> |
   <%= link_to "Smazat", @show, :confirm => 'Opravdu smazat?', :method => :delete %> |
+<% end -%>
+
 <% end -%>
   <%= link_to "Zobrazit všechny", shows_path %>
 </p>
