@@ -1,6 +1,8 @@
 <% title @show.name %>
 <% if @show.archived? -%>
+<div class="archived_headline slight_padding">
   Tato akce byla archivována
+</div>
 <% end -%>
 <%= h @show.description %>
 <span class="slight_padding">

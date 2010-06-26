@@ -51,11 +51,11 @@ tbody tr:hover {
   margin-left: 5px;
   padding: 3px;
 }
-.slight_padding .subscribed {
-  margin: 5px;
-  padding: 5px;
+.archived_headline {
+  background-color: #ffe9c9;
+  border: solid 1px #cc6666;
 }
-.slight_padding .not_subscribed {
+.slight_padding {
   margin: 5px;
   padding: 5px;
 }

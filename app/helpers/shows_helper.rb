@@ -27,11 +27,11 @@ module ShowsHelper
   def subscribed_class(show, user)
     case current_user.subscribed_to?(show)
     when true then
-      'subscribed'
+      'slight_padding subscribed'
     when false then
-      'not_subscribed'
+      'slight_padding not_subscribed'
     else
-      ''
+      'slight_padding'
     end
   end
 
