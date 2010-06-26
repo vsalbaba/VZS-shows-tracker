@@ -78,11 +78,10 @@ class ShowsController < ApplicationController
     @show.unarchive
     if @show.save then
       flash[:notice] = "Akce byla odarchivována"
-      redirect_to shows.url
     else
       flash[:error] = "Došlo k neočekávané chybě"
-      redirect_to @show
     end
+    redirect_to @show
   end
 
   private
