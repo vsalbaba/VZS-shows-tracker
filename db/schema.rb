@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100426100727) do
+ActiveRecord::Schema.define(:version => 20100626210416) do
 
   create_table "shows", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20100426100727) do
     t.text     "notes"
     t.text     "description"
     t.boolean  "paid"
+    t.boolean  "archived"
   end
 
   create_table "subscriptions", :force => true do |t|

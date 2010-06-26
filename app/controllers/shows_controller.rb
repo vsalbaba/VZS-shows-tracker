@@ -1,11 +1,15 @@
 class ShowsController < ApplicationController
   before_filter :login_required
+  before_filter :find_show, :only => [:kick, :show, :edit, :update, :destroy, :archive, :unarchive]
   def index
-    @shows = Show.all.paginate(:page => params[:page])
+    @shows = Show.unarchived.all.paginate(:page => params[:page])
+  end
+
+  def archived
+    @shows = Show.archived.all.paginate(:page => params[:page])
   end
 
   def join
-    @show = Show.find(params[:id])
     @subscription = Subscription.new(:user_id => current_user.id, :show_id => @show.id, :subscribed => params[:subscribed])
     if @subscription.save then
       if @subscription.subscribed then
@@ -20,13 +24,11 @@ class ShowsController < ApplicationController
   end
 
   def kick
-    @show = Show.find(params[:id])
     @show.users.delete User.find(params[:user_id])
     redirect_to :action => 'show'
   end
 
   def show
-    @show = Show.find(params[:id])
   end
 
   def new
@@ -44,11 +46,9 @@ class ShowsController < ApplicationController
   end
 
   def edit
-    @show = Show.find(params[:id])
   end
 
   def update
-    @show = Show.find(params[:id])
     if @show.update_attributes(params[:show])
       flash[:notice] = "Akce aktualizována"
       redirect_to @show
@@ -58,10 +58,36 @@ class ShowsController < ApplicationController
   end
 
   def destroy
-    @show = Show.find(params[:id])
     @show.destroy
     flash[:notice] = "Akce smazána"
     redirect_to shows_url
+  end
+
+  def archive
+    @show.archive
+    if @show.save then
+      flash[:notice] = "Akce archivována"
+      redirect_to shows_url
+    else
+      flash[:error] = "Došlo k neočekávané chybě"
+      redirect_to @show
+    end
+  end
+
+  def unarchive
+
+    @show.unarchive
+    if @show.save then
+      flash[:notice] = "Akce byla odarchivována"
+      redirect_to shows.url
+    else
+      flash[:error] = "Došlo k neočekávané chybě"
+      redirect_to @show
+    end
+  end
+  private
+  def find_show
+    @show = Show.find(params[:id])
   end
 end
 

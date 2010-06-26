@@ -54,7 +54,8 @@
 <p>
 <% if can? :manage, Show -%>
   <%= link_to "Editovat", edit_show_path(@show) %> |
-  <%= link_to "Smazat", @show, :confirm => 'Opravdu?', :method => :delete %> |
+  <%= link_to 'Archivovat', archive_show_path(@show), :confirm => 'Opravdu archivovat?', :method => :put %> |
+  <%= link_to "Smazat", @show, :confirm => 'Opravdu smazat?', :method => :delete %> |
 <% end -%>
   <%= link_to "Zobrazit všechny", shows_path %>
 </p>

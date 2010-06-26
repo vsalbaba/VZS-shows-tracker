@@ -39,7 +39,7 @@ module Authentication
 
   def login_required
     unless logged_in?
-      flash[:error] = "Pro přístup k ukázkám se musíte nejdříve přihlásit."
+      flash[:error] = "Pro přístup k akcím se musíte nejdříve přihlásit."
       store_target_location
       redirect_to login_url
     end

@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  # Help action - it doesnt realy belong anywhere, so...
   def textile_help
     @list_example = %{
 * prvni polozka
