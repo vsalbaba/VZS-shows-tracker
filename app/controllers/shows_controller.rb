@@ -1,6 +1,6 @@
 class ShowsController < ApplicationController
   before_filter :login_required
-  before_filter :find_show, :only => [:kick, :show, :edit, :update, :destroy, :archive, :unarchive]
+  before_filter :find_show, :only => [:join, :kick, :show, :edit, :update, :destroy, :archive, :unarchive]
   def index
     @shows = Show.unarchived.all.paginate(:page => params[:page])
   end
