@@ -9,7 +9,11 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :vzs_id
 
   def admin?
-    self.auth_level == 1 or self.auth_level == 2
+    self.auth_level == 2
+  end
+
+  def superadmin?
+    self.auth_level == 1
   end
 
   def subscribed_to?(show)
@@ -25,7 +29,9 @@ class User < ActiveRecord::Base
   def self.authenticate(login, pass)
     url = build_url_for(login, pass)
     xml = open url
-    User.find_or_create_from_xml(login, xml)
+    @user = User.find_or_create_from_xml(login, xml)
+    @user.try(:touch, :last_login)
+    @user
   end
 
   def self.find_or_create_from_xml(user_vzs_id, xml)

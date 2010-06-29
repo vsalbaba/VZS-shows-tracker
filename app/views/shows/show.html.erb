@@ -58,17 +58,22 @@
   </p>
 
   <p>
-  <% if can? :manage, Show -%>
+  <% if can? :edit, @show -%>
     <%= link_to "Editovat", edit_show_path(@show) %> |
-    <%= link_to 'Archivovat', archive_show_path(@show), :confirm => 'Opravdu archivovat?', :method => :put %> |
-    <%= link_to "Smazat", @show, :confirm => 'Opravdu smazat?', :method => :delete %> |
   <% end -%>
 
-  <% else -%>
-    <% if can? :unarchive, @show -%>
-      <%= link_to 'Odarchivovat', unarchive_show_path(@show), :method => :put %>
-    <% end -%>
+  <% if can? :archive, @show -%>
+    <%= link_to 'Archivovat', archive_show_path(@show), :confirm => 'Opravdu archivovat?', :method => :put %> |
   <% end -%>
+
+  <% if can? :delete, @show -%>
+    <%= link_to "Smazat", @show, :confirm => 'Opravdu smazat?', :method => :delete %> |
+  <% end -%>
+<% else -%>
+  <% if can? :unarchive, @show -%>
+    <%= link_to 'Odarchivovat', unarchive_show_path(@show), :method => :put %>
+  <% end -%>
+<% end -%>
   <%= link_to "Zobrazit všechny aktuální akce", shows_path %>
 </p>
 
