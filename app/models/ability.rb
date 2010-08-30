@@ -2,6 +2,7 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
+    can :feed, Show
     if user.admin?
       can :manage, :all
       cannot :delete, Show

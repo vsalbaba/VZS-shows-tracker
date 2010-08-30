@@ -1,14 +1,17 @@
 class ShowsController < ApplicationController
-  before_filter :login_required
+  before_filter :login_required, :except => :feed
   before_filter :find_show, :only => [:join, :kick, :show, :edit, :update, :destroy, :archive, :unarchive]
   def index
     @shows = Show.unarchived.all.paginate(:page => params[:page])
+  end
 
+  def feed
+    @shows = Show.unarchived.all
     respond_to do |format|
-      format.html
       format.atom
     end
   end
+
 
   def archived
     @shows = Show.archived.all.paginate(:page => params[:page])

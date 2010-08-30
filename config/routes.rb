@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :shows, :member => {:join => :post, :kick => :put, :archive => :put, :unarchive => :put}, :collection => {:archived => :get}
+  map.resources :shows, :member => {:join => :post, :kick => :put, :archive => :put, :unarchive => :put}, :collection => {:archived => :get, :feed => :get}
 
   map.root :shows
 
