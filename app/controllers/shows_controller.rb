@@ -3,6 +3,11 @@ class ShowsController < ApplicationController
   before_filter :find_show, :only => [:join, :kick, :show, :edit, :update, :destroy, :archive, :unarchive]
   def index
     @shows = Show.unarchived.all.paginate(:page => params[:page])
+
+    respond_to do |format|
+      format.html
+      format.atom
+    end
   end
 
   def archived

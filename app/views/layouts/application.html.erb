@@ -4,7 +4,9 @@
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
     <%= stylesheet_link_tag 'application', 'formtastic', 'formtastic_changes' %>
+    <%= javascript_include_tag :defaults, :cache => true %>
     <%= yield(:head) %>
+    <%= auto_discovery_link_tag :atom, formatted_shows_path(:atom)%>
   </head>
   <body>
     <div id="container">
