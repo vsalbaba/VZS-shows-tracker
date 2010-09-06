@@ -1,9 +1,5 @@
-nastavil bych an té první stránce pevné mezery mezi daty ale txt aby se zalamoval podsebe (né aby nebyl vydět)  
-popsat vyznam barev v tabulce
-
-také bych definoval rámeček "Sraz" aby se v 1 řádku zobrazil čas a podtím 2řádek místo
-(teď se to zobrazuje náhodně )
-
-zadat pevný konec u všech sloupců a nastvit zalamování textů
-to co tam píšu je sice nesmysl který by se psal do poznámek ale bude to lepší to tamít nastavené
+TODO: Prihlasit lidi k ukazce, at uz vyberem ze seznamu nebo pomoci vzsid
+TODO: Oddelit brigadnicke hodiny a placene hodiny
+TODO: Moznost zadat jiny pocet hodin pro cloveka pri ukonceni akce
+TOOD: Soupis brigadnickych / placenych hodin pro kazdeho cloveka za urcite obdobi
 

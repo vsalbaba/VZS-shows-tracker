@@ -18,7 +18,11 @@ class ShowsController < ApplicationController
   end
 
   def join
-    @subscription = Subscription.new(:user_id => current_user.id, :show_id => @show.id, :subscribed => params[:subscribed])
+    user_id = current_user.id
+    if params[:user_id] and can?(:subscribe_others, @show) then
+      user_id = params[:user_id]
+    end
+    @subscription = Subscription.new(:user_id => user_id, :show_id => @show.id, :subscribed => params[:subscribed])
     if @subscription.save then
       if @subscription.subscribed then
         flash[:notice] = 'Byli jste přihlášeni na akci. Pokud se budete chtít odhlásit, napište vedoucímu akce'
