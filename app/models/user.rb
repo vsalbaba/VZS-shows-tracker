@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
 
   validates_presence_of :vzs_id, :name, :surname, :auth_level
   validates_uniqueness_of :vzs_id
+  
+  default_scope :order => 'surname, name'
 
   def admin?
     self.auth_level == 2
