@@ -10,6 +10,9 @@
   </head>
   <body>
     <div id="container">
+      <div id="navigation">
+        <%= link_to "Aktuální akce", shows_path %> | <%= link_to "Archivované akce", archived_shows_path %> 
+      </div>
       <div id="login_box">
         <% if logged_in? %>
           <%= current_user.full_name %>
