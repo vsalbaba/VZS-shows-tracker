@@ -7,7 +7,8 @@
     <%= f.input :meet_time, :minute_step => 15 %>
     <%= f.input :meet_at, :hint => 'Například: klubovna. Pokud je míst setkání víc, zadejte hlavní z nich a ostatní vypište do poznámek.' %>
     <%= f.input :end_time, :minute_step => 15 %>
-    <%= f.input :payed_hours, :minute_step => 'Například: 8' %>
+    <%= f.input :payed_hours, :hint => 'Například: 8' %>
+    <%= f.input :brigade_hours, :hint => 'Například: 10' %>
     <%= f.input :paid, :as => :radio, :collection => [["Brigádnické hodiny", false], ["Placená", true]] %>
     <%= f.input :people, :hint => 'Například: 5, pokud nevyplníte, bude ukázka bez omezení' %>
     <%= f.input :contact %>

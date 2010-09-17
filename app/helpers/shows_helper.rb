@@ -17,7 +17,7 @@ module ShowsHelper
       if show.paid
         reward << "cca #{number_to_currency(@show.pay)}"
       end
-      reward << "#{show.payed_hours} brigádnických hodin"
+      reward << "#{@show.brigade_hours} brigádnických hodin"
       reward.join(' nebo ')
     else
       "neurčena"

@@ -22,7 +22,12 @@ class ShowsController < ApplicationController
     if params[:user_id] and can?(:subscribe_others, @show) then
       user_id = params[:user_id]
     end
-    @subscription = Subscription.new(:user_id => user_id, :show_id => @show.id, :subscribed => params[:subscribed])
+
+    @subscription = Subscription.new(:user_id => user_id, 
+                                     :show_id => @show.id, 
+                                     :subscribed => params[:subscribed], 
+                                     :wants_payed => params[:wants_payed])
+    
     if @subscription.save then
       if @subscription.subscribed then
         flash[:notice] = 'Byli jste přihlášeni na akci. Pokud se budete chtít odhlásit, napište vedoucímu akce'
@@ -31,6 +36,7 @@ class ShowsController < ApplicationController
       end
     else
       flash[:error] = 'Na akci vás nebylo možno přihlásit'
+      logger.debug @subscription.errors.inspect
     end
     redirect_to :action => 'show'
   end

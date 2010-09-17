@@ -9,47 +9,57 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100629122224) do
+ActiveRecord::Schema.define(:version => 20100916161729) do
 
   create_table "shows", :force => true do |t|
-    t.string   "name"
-    t.date     "date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.time     "meet_time"
-    t.time     "end_time"
-    t.integer  "payed_hours"
-    t.integer  "people"
-    t.string   "meet_at"
-    t.string   "contact"
-    t.boolean  "breakfast"
-    t.boolean  "lunch"
-    t.boolean  "dinner"
-    t.text     "notes"
-    t.text     "description"
-    t.boolean  "paid"
-    t.boolean  "archived"
+    t.string    "name"
+    t.date      "date"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.time      "meet_time"
+    t.time      "end_time"
+    t.integer   "payed_hours"
+    t.integer   "people"
+    t.string    "meet_at"
+    t.string    "contact"
+    t.boolean   "breakfast"
+    t.boolean   "lunch"
+    t.boolean   "dinner"
+    t.text      "notes"
+    t.text      "description"
+    t.boolean   "paid"
+    t.boolean   "archived"
+    t.integer   "brigade_hours"
   end
 
+  create_table "shows_users", :id => false, :force => true do |t|
+    t.integer "show_id"
+    t.integer "user_id"
+  end
+
+  add_index "shows_users", ["show_id"], :name => "index_shows_users_on_show_id"
+  add_index "shows_users", ["user_id"], :name => "index_shows_users_on_user_id"
+
   create_table "subscriptions", :force => true do |t|
-    t.integer  "show_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "subscribed"
+    t.integer   "show_id"
+    t.integer   "user_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.boolean   "subscribed"
+    t.boolean   "wants_payed"
   end
 
   add_index "subscriptions", ["show_id"], :name => "index_subscriptions_on_show_id"
   add_index "subscriptions", ["user_id"], :name => "index_subscriptions_on_user_id"
 
   create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "surname"
-    t.string   "vzs_id"
-    t.integer  "auth_level"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.time     "last_login"
+    t.string    "name"
+    t.string    "surname"
+    t.string    "vzs_id"
+    t.integer   "auth_level"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.time      "last_login"
   end
 
 end

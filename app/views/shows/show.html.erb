@@ -36,10 +36,15 @@
   Na akci jsou nahlášeni:
   <ol>
   <% for subscription in @show.subscriptions.subscribed -%>
-    <li><%= subscription.user.full_name %>
-    <% if can? :kick, @show then -%>
-      (<%= link_to 'Odhlásit', kick_show_path(@show, :user_id => subscription.user.id), :confirm => "Opravdu vyhodit #{subscription.user.full_name} z ukázky?", :method => :put %>)
-    <% end -%>
+    <li><%= subscription.user.full_name %> 
+      <% if can?(:see_subscription, Subscription) %>
+        <% if subscription.wants_payed %>
+          <strong>placeně</strong>
+        <% end %>
+      <% end %>
+      <% if can? :kick, @show then -%>
+        (<%= link_to 'Odhlásit', kick_show_path(@show, :user_id => subscription.user.id), :confirm => "Opravdu vyhodit #{subscription.user.full_name} z ukázky?", :method => :put %>)
+      <% end -%>
     </li>
   <% end %>
   </ol>
@@ -64,7 +69,8 @@
 <% if not @show.archived? then -%>
   <div id='joining_links'>
     <% unless current_user.shows.exists? @show -%>
-      <%= link_to 'Přihlásit se na akci', join_show_path(@show, :subscribed => 'true'), :method => :post, :confirm => 'Jste si jisti? Z ukázky Vás bude moci odhlásit pouze vedoucí' %> |
+      <%= link_to 'Přihlásit - brig. hodiny', join_show_path(@show, :subscribed => 'true'), :method => :post, :confirm => 'Jste si jisti? Z akce Vás bude moci odhlásit pouze vedoucí' %> |
+      <%= link_to_if @show.paid, 'Přihlásit - peníze', join_show_path(@show, :subscribed => 'true', :wants_payed => 'true'), :method => :post, :confirm => 'Jste si jisti? Z akce Vás bude moci odhlásit pouze vedoucí' %> |
       <%= link_to 'Na tuto ukázku nemohu jet', join_show_path(@show, :subscribed => 'false'), :method => :post %>
     <% end -%>
   </div>

@@ -1,7 +1,8 @@
 class Show < ActiveRecord::Base
   attr_accessible :name, :date, :meet_time, :end_time,
                   :payed_hours, :people, :meet_at, :contact, :breakfast,
-                  :lunch, :dinner, :notes, :description, :paid, :archived
+                  :lunch, :dinner, :notes, :description, :paid, :archived,
+                  :brigade_hours
 
   default_scope :order => :date
   named_scope :archived, :conditions => {:archived => true}, :order => "date DESC"
@@ -11,7 +12,14 @@ class Show < ActiveRecord::Base
 
   has_many :users, :through => :subscriptions
   has_many :subscriptions
+  before_save :check_hours
   HOUR_RATE = 30
+
+  def check_hours
+    logger.debug "brigade_hours #{brigade_hours.inspect}"
+    brigade_hours ||= payed_hours
+    logger.debug "brigade_hours #{brigade_hours.inspect}"
+  end
 
   def subscribed_count
     self.subscriptions.find_all_by_subscribed(true).size
@@ -34,4 +42,5 @@ class Show < ActiveRecord::Base
     payed_hours.to_i * HOUR_RATE
   end
 end
+
 

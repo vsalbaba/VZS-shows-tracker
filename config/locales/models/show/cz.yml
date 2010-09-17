@@ -6,11 +6,12 @@ cz:
       show:
         name: Název
         date: Datum
-        meet_time: Sraz v
+        meet_time: Sraz (čas)
         end_time: Konec v
-        payed_hours: Pracovních hodin
+        payed_hours: Placených hodin
+        brigade_hours: Brigádnických hodin
         people: Počet lidí
-        meet_at: Sraz
+        meet_at: Sraz (místo)
         contact: Vedoucí
         breakfast: Snídaně
         lunch: Oběd
