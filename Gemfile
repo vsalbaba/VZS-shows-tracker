@@ -17,6 +17,7 @@ gem 'will_paginate'
 gem 'RedCloth'
 gem 'less'
 gem 'jquery-rails', '~> 1.0.12'
+gem 'nokogiri'
 
 group :development do
   gem 'nifty-generators'
