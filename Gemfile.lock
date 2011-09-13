@@ -65,6 +65,7 @@ GEM
     mysql2 (0.2.13)
     nifty-generators (0.4.6)
     nokogiri (1.5.0)
+    pg (0.11.0)
     polyglot (0.3.2)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -132,6 +133,7 @@ DEPENDENCIES
   libnotify
   mysql2 (~> 0.2.0)
   nifty-generators
+  pg
   rails (= 3.0.9)
   rails3-generators
   rspec-rails (= 2.6.1)
