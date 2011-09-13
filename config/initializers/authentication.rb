@@ -1,1 +1,1 @@
-require 'lib/authentication.rb'
+require Rails.root + 'lib/authentication.rb'

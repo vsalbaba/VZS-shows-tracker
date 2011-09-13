@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class Show < ActiveRecord::Base
   attr_accessible :name, :date, :meet_time, :end_time,
                   :payed_hours, :people, :meet_at, :contact, :breakfast,

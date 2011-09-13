@@ -1,3 +1,4 @@
+# encoding: UTF-8
 module ShowsHelper
   def food_for(show)
     food = []

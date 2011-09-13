@@ -27,7 +27,7 @@ module Shows
     config.time_zone = 'Prague'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    config.i18n.load_path += Dir[File.join(RAILS_ROOT, 'config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.load_path += Dir[File.join(Rails.root, 'config', 'locales', '**', '*.{rb,yml}')]
     config.i18n.default_locale = :cz
 
     # JavaScript files you want as :defaults (application.js is always included).
