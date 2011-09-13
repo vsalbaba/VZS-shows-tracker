@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   validates_presence_of :vzs_id, :name, :surname, :auth_level
   validates_uniqueness_of :vzs_id
-  
+
   default_scope :order => 'surname, name'
 
   def admin?
@@ -29,6 +29,9 @@ class User < ActiveRecord::Base
 
   # login can be either username or email address
   def self.authenticate(login, pass)
+    if Rails.env.development? or Rails.env.test?
+      return User.find_by_vzs_id('080')
+    end
     url = build_url_for(login, pass)
     xml = open url
     @user = User.find_or_create_from_xml(login, xml)

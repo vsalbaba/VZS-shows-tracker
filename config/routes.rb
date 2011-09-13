@@ -1,16 +1,29 @@
-ActionController::Routing::Routes.draw do |map|
-  map.resources :users
+Shows::Application.routes.draw do
 
-  map.resources :shows, :member => {:join => :post, :kick => :put, :archive => :put, :unarchive => :put}, :collection => {:archived => :get, :feed => :get}
+  resources :users
 
-  map.root :shows
+  resources :shows do
+    member do
+      post :join
+      put :kick
+      put :archive
+      put :unarchive
+    end
 
-  map.signup 'signup', :controller => 'users', :action => 'new'
-  map.logout 'logout', :controller => 'sessions', :action => 'destroy'
-  map.login 'login', :controller => 'sessions', :action => 'new'
+    collection do
+      get :archived
+      get :feed
+    end
+  end
 
-  map.textile_help 'help', :controller => 'application', :action => 'textile_help'
+  root :to => 'shows#index'
 
-  map.resources :sessions
+  match 'signup' => 'users#new', :as => 'signup'
+  match 'logout' => 'sessions#destroy', :as => 'logout'
+  match 'login' => 'sessions#new', :as => 'login'
+
+  match 'help' => 'application#textile_help', :as => 'textile_help'
+
+  resources :sessions
 end
 

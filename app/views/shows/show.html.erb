@@ -37,13 +37,20 @@
   <ol>
   <% for subscription in @show.subscriptions.subscribed -%>
     <li><%= subscription.user.full_name %> 
+
       <% if can?(:see_subscription, Subscription) %>
         <% if subscription.wants_payed %>
           <strong>placeně</strong>
         <% end %>
       <% end %>
+
       <% if can? :kick, @show then -%>
-        (<%= link_to 'Odhlásit', kick_show_path(@show, :user_id => subscription.user.id), :confirm => "Opravdu vyhodit #{subscription.user.full_name} z ukázky?", :method => :put %>)
+      (<%= 
+      link_to 'Odhlásit', 
+        kick_show_path(@show, :user_id => subscription.user.id ), 
+        :method => :put, 
+        :confirm => "Opravdu vyhodit #{subscription.user.full_name} z ukázky?"
+      %>)
       <% end -%>
     </li>
   <% end %>

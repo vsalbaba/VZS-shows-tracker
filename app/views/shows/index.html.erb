@@ -2,8 +2,6 @@
 <div id='table_hint'>
   <span class="subscribed">Jedu</span>|<span class="not_subscribed">Nejedu</span>
 </div>
-
-<% paginated_section @shows do -%>
   <hr />
   <table>
     <thead>
@@ -22,7 +20,6 @@
      </tbody>
   </table>
   <hr />
-<% end %>
 <% if can?(:create, Show) then -%>
 <p><%= link_to "Nová akce", new_show_path %></p>
 <% end -%>

@@ -1,0 +1,231 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Ability	/home/vojta/Dokumenty/vzs/shows/app/models/ability.rb	/^class Ability$/;"	c
+ActionController	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/controller_extension.rb	/^class ActionController::Base$/;"	c
+ActionView	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^module ActionView$/;"	m
+ActiveRecordExtensions	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^module ActiveRecordExtensions # :nodoc:$/;"	m
+ActiveSupport	/home/vojta/Dokumenty/vzs/shows/test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddArchivedToShow	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100626210416_add_archived_to_show.rb	/^class AddArchivedToShow < ActiveRecord::Migration$/;"	c
+AddColumnsToShow	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424104917_add_columns_to_show.rb	/^class AddColumnsToShow < ActiveRecord::Migration$/;"	c
+AddLastLoginToUser	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100629122224_add_last_login_to_user.rb	/^class AddLastLoginToUser < ActiveRecord::Migration$/;"	c
+AddPaidToShows	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100425193409_add_paid_to_shows.rb	/^class AddPaidToShows < ActiveRecord::Migration$/;"	c
+AddSubscribedToSubscriptions	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100426100727_add_subscribed_to_subscriptions.rb	/^class AddSubscribedToSubscriptions < ActiveRecord::Migration$/;"	c
+ApplicationController	/home/vojta/Dokumenty/vzs/shows/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/home/vojta/Dokumenty/vzs/shows/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+Authentication	/home/vojta/Dokumenty/vzs/shows/lib/authentication.rb	/^module Authentication$/;"	m
+Boot	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^  class Boot$/;"	c
+BrowsingTest	/home/vojta/Dokumenty/vzs/shows/test/performance/browsing_test.rb	/^class BrowsingTest < ActionController::PerformanceTest$/;"	c
+ClassMethods	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^    module ClassMethods$/;"	m
+ControllerTest	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/controller_test.rb	/^class ControllerTest < ActionController::TestCase$/;"	c
+CreateShows	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424092337_create_shows.rb	/^class CreateShows < ActiveRecord::Migration$/;"	c
+CreateShowsUsers	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424114605_create_shows_users.rb	/^class CreateShowsUsers < ActiveRecord::Migration$/;"	c
+CreateUsers	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100419232100_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+Dummy	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  class Dummy < ActiveRecord::Base$/;"	c	class:ValidationReflectionTest
+ExampleController	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/controller_test.rb	/^class ExampleController < ActionController::Base$/;"	c
+GemBoot	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^  class GemBoot < Boot$/;"	c
+GeneratorMethods	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^				module GeneratorMethods$/;"	m	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator
+Helpers	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^	module Helpers$/;"	m	class:ActionView
+JavaScriptElementCollectionProxy	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^		class JavaScriptElementCollectionProxy < JavaScriptCollectionProxy #:nodoc:\\$/;"	c	class:ActionView.Helpers
+JavaScriptElementProxy	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^		class JavaScriptElementProxy < JavaScriptProxy #:nodoc:$/;"	c	class:ActionView.Helpers
+JavaScriptGenerator	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			class JavaScriptGenerator$/;"	c	class:ActionView.Helpers.PrototypeHelper
+JavaScriptHelper	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^		module JavaScriptHelper$/;"	m	class:ActionView.Helpers
+LayoutHelper	/home/vojta/Dokumenty/vzs/shows/app/helpers/layout_helper.rb	/^module LayoutHelper$/;"	m
+Less	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^class Less::More$/;"	c
+MoreTest	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/more_test.rb	/^class MoreTest < ActiveSupport::TestCase$/;"	c
+PrototypeHelper	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^		module PrototypeHelper$/;"	m	class:ActionView.Helpers
+Rails	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^module Rails$/;"	m
+Rails	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^module Rails$/;"	m
+ScriptaculousHelper	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^		module ScriptaculousHelper$/;"	m	class:ActionView.Helpers
+SessionsController	/home/vojta/Dokumenty/vzs/shows/app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+SessionsHelper	/home/vojta/Dokumenty/vzs/shows/app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
+Show	/home/vojta/Dokumenty/vzs/shows/app/models/show.rb	/^class Show < ActiveRecord::Base$/;"	c
+ShowTest	/home/vojta/Dokumenty/vzs/shows/test/unit/show_test.rb	/^class ShowTest < ActiveSupport::TestCase$/;"	c
+ShowsController	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^class ShowsController < ApplicationController$/;"	c
+ShowsControllerTest	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^class ShowsControllerTest < ActionController::TestCase$/;"	c
+ShowsHelper	/home/vojta/Dokumenty/vzs/shows/app/helpers/shows_helper.rb	/^module ShowsHelper$/;"	m
+Subscription	/home/vojta/Dokumenty/vzs/shows/app/models/subscription.rb	/^class Subscription < ActiveRecord::Base$/;"	c
+User	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UserTest	/home/vojta/Dokumenty/vzs/shows/test/unit/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+UsersHelper	/home/vojta/Dokumenty/vzs/shows/app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+ValidationReflection	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^  module ValidationReflection # :nodoc:$/;"	m	class:ActiveRecordExtensions
+ValidationReflectionTest	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^class ValidationReflectionTest < Test::Unit::TestCase$/;"	c
+VendorBoot	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^  class VendorBoot < Boot$/;"	c
+admin?	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def admin?$/;"	f	class:User
+all_less_files	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def all_less_files$/;"	f
+archive	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def archive$/;"	f	class:ShowsController
+archive	/home/vojta/Dokumenty/vzs/shows/app/models/show.rb	/^  def archive$/;"	f	class:Show
+archived	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def archived$/;"	f	class:ShowsController
+archived?	/home/vojta/Dokumenty/vzs/shows/app/models/show.rb	/^  def archived?$/;"	f	class:Show
+assert_include	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def assert_include(item, obj)$/;"	f
+assert_not_include	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def assert_not_include(item, obj)$/;"	f
+authenticate	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def self.authenticate(login, pass)$/;"	F	class:User
+backtrace_cleaner	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^  def self.backtrace_cleaner$/;"	F	class:Rails
+boot!	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def boot!$/;"	f	class:Rails
+booted?	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def booted?$/;"	f	class:Rails
+build_callbacks	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def build_callbacks(options)$/;"	f	class:ActionView.Helpers.PrototypeHelper
+build_insertion	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def build_insertion(insertion)$/;"	f	class:ActionView.Helpers.PrototypeHelper
+build_observer	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def build_observer(klass, name, options = {})$/;"	f	class:ActionView.Helpers.PrototypeHelper
+build_update_for_error	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def build_update_for_error(html_id, insertion=nil)$/;"	f	class:ActionView.Helpers.PrototypeHelper
+build_update_for_success	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def build_update_for_success(html_id, insertion=nil)$/;"	f	class:ActionView.Helpers.PrototypeHelper
+build_url_for	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def self.build_url_for(login, pass)$/;"	F	class:User
+columns	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^      def columns$/;"	f	class:ValidationReflectionTest.Dummy
+compile	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def compile(file)$/;"	f
+compression	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def compression$/;"	f	class:Less
+convert_to_utf8	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def self.convert_to_utf8(string)$/;"	F	class:User
+create	/home/vojta/Dokumenty/vzs/shows/app/controllers/sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
+create	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def create$/;"	f	class:ShowsController
+create_fake_column	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^      def create_fake_column(name, null = true, limit = nil)$/;"	f	class:ValidationReflectionTest.Dummy
+css_path	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def css_path$/;"	f
+current_user	/home/vojta/Dokumenty/vzs/shows/lib/authentication.rb	/^  def current_user$/;"	f	class:Authentication
+destination_path	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def destination_path$/;"	f	class:Less
+destroy	/home/vojta/Dokumenty/vzs/shows/app/controllers/sessions_controller.rb	/^  def destroy$/;"	f	class:SessionsController
+destroy	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def destroy$/;"	f	class:ShowsController
+down	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100419232100_create_users.rb	/^  def self.down$/;"	F	class:CreateUsers
+down	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424092337_create_shows.rb	/^  def self.down$/;"	F	class:CreateShows
+down	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424104917_add_columns_to_show.rb	/^  def self.down$/;"	F	class:AddColumnsToShow
+down	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424114605_create_shows_users.rb	/^  def self.down$/;"	F	class:CreateShowsUsers
+down	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100425193409_add_paid_to_shows.rb	/^  def self.down$/;"	F	class:AddPaidToShows
+down	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100426100727_add_subscribed_to_subscriptions.rb	/^  def self.down$/;"	F	class:AddSubscribedToSubscriptions
+down	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100626210416_add_archived_to_show.rb	/^  def self.down$/;"	F	class:AddArchivedToShow
+down	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100629122224_add_last_login_to_user.rb	/^  def self.down$/;"	F	class:AddLastLoginToUser
+draggable_element_js	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def draggable_element_js(element_id, options = {})$/;"	f	class:ActionView.Helpers
+drop_receiving_element_js	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def drop_receiving_element_js(element_id, options = {})$/;"	f	class:ActionView.Helpers
+edit	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def edit$/;"	f	class:ShowsController
+encrypt_password	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def self.encrypt_password(pass)$/;"	F	class:User
+feed	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def feed$/;"	f	class:ShowsController
+find_or_create_from_xml	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def self.find_or_create_from_xml(user_vzs_id, xml)$/;"	F	class:User
+find_show	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def find_show$/;"	f	class:ShowsController
+food_for	/home/vojta/Dokumenty/vzs/shows/app/helpers/shows_helper.rb	/^  def food_for(show)$/;"	f	class:ShowsHelper
+full_name	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def full_name$/;"	f	class:User
+gem_version	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^      def gem_version$/;"	f	class:GemBoot
+generate	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def generate(source)$/;"	f	class:Less
+generate_all	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def generate_all$/;"	f
+generate_css_from_less	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/controller_extension.rb	/^  def generate_css_from_less$/;"	f	class:ActionController
+header	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def header$/;"	f	class:Less
+hide	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def hide(*ids)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+ignoring_subvalidations	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^        def ignoring_subvalidations(ignore)$/;"	f	class:ClassMethods
+included	/home/vojta/Dokumenty/vzs/shows/lib/authentication.rb	/^  def self.included(controller)$/;"	F	class:Authentication
+included	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^    def included(base) # :nodoc:$/;"	f	class:ActiveRecordExtensions.ValidationReflection
+index	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def index$/;"	f	class:ShowsController
+initialize	/home/vojta/Dokumenty/vzs/shows/app/models/ability.rb	/^  def initialize(user)$/;"	f	class:Ability
+initialize	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def initialize(generator, id)$/;"	f	class:ActionView.Helpers.JavaScriptElementProxy
+initialize	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def initialize(generator, pattern)$/;"	f	class:ActionView.Helpers.JavaScriptElementCollectionProxy
+insert_html	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def insert_html(position, id, *options_for_render)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+install	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^    def install(base)$/;"	f	class:ActiveRecordExtensions.ValidationReflection
+javascript	/home/vojta/Dokumenty/vzs/shows/app/helpers/layout_helper.rb	/^  def javascript(*args)$/;"	f	class:LayoutHelper
+javascript_function	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def javascript_function(*args, &block)$/;"	f	class:ActionView.Helpers.JavaScriptHelper
+join	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def join$/;"	f	class:ShowsController
+jquery_id	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def jquery_id(id)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+jquery_id	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def jquery_id(id)$/;"	f	class:ActionView.Helpers.JavaScriptHelper
+jquery_ids	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def jquery_ids(ids)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+jquery_ids	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def jquery_ids(ids)$/;"	f	class:ActionView.Helpers.JavaScriptHelper
+kick	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def kick$/;"	f	class:ShowsController
+less_path	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def less_path$/;"	f
+load_config	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^    def load_config$/;"	f	class:ActiveRecordExtensions.ValidationReflection
+load_initializer	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def load_initializer$/;"	f	class:GemBoot
+load_initializer	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def load_initializer$/;"	f	class:VendorBoot
+load_rails_gem	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def load_rails_gem$/;"	f	class:GemBoot
+load_rubygems	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^      def load_rubygems$/;"	f	class:GemBoot
+logged_in?	/home/vojta/Dokumenty/vzs/shows/lib/authentication.rb	/^  def logged_in?$/;"	f	class:Authentication
+logger	/home/vojta/Dokumenty/vzs/shows/test/test_helper.rb	/^  def logger$/;"	f	class:ActiveSupport
+login_required	/home/vojta/Dokumenty/vzs/shows/lib/authentication.rb	/^  def login_required$/;"	f	class:Authentication
+mtime	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def mtime(file)$/;"	f
+mtime_including_imports	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def mtime_including_imports(file)$/;"	f
+new	/home/vojta/Dokumenty/vzs/shows/app/controllers/sessions_controller.rb	/^  def new$/;"	f	class:SessionsController
+new	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def new$/;"	f	class:ShowsController
+number_of_people	/home/vojta/Dokumenty/vzs/shows/app/models/subscription.rb	/^  def number_of_people$/;"	f	class:Subscription
+options_for_ajax	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def options_for_ajax(options)$/;"	f	class:ActionView.Helpers.PrototypeHelper
+parse_gem_version	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^      def parse_gem_version(text)$/;"	f	class:GemBoot
+path_to_destination	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def path_to_destination(path)$/;"	f
+pay	/home/vojta/Dokumenty/vzs/shows/app/models/show.rb	/^  def pay$/;"	f	class:Show
+periodically_call_remote	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def periodically_call_remote(options = {})$/;"	f	class:ActionView.Helpers.PrototypeHelper
+pick_boot	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def pick_boot$/;"	f	class:Rails
+preinitialize	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def preinitialize$/;"	f	class:Rails
+preinitializer_path	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def preinitializer_path$/;"	f	class:Rails
+read_css	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def read_css(file)$/;"	f
+read_environment_rb	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^        def read_environment_rb$/;"	f	class:GemBoot
+redirect_to_target_or_default	/home/vojta/Dokumenty/vzs/shows/lib/authentication.rb	/^  def redirect_to_target_or_default(default)$/;"	f	class:Authentication
+reflect_on_all_validations	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^      def reflect_on_all_validations$/;"	f	class:ClassMethods
+reflect_on_validations_for	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^      def reflect_on_validations_for(attr_name)$/;"	f	class:ClassMethods
+relative_to_source_path	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def relative_to_source_path(path)$/;"	f
+remember_validation_metadata	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/lib/validation_reflection.rb	/^        def remember_validation_metadata(validation_type, *attr_names)$/;"	f	class:ClassMethods
+remote_function	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def remote_function(options)$/;"	f	class:ActionView.Helpers.PrototypeHelper
+remove	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def remove(*ids)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+remove_all_generated	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def remove_all_generated$/;"	f
+replace	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def replace(id, *options_for_render)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+replace	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def replace(*options_for_render)$/;"	f	class:ActionView.Helpers.JavaScriptElementProxy
+replace_html	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def replace_html(id, *options_for_render)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+replace_html	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def replace_html(*options_for_render)$/;"	f	class:ActionView.Helpers.JavaScriptElementProxy
+reward	/home/vojta/Dokumenty/vzs/shows/app/helpers/shows_helper.rb	/^  def reward(show)$/;"	f	class:ShowsHelper
+root	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^  def self.root$/;"	F	class:Rails
+rubygems_version	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^      def rubygems_version$/;"	f	class:GemBoot
+run	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def run$/;"	f	class:Boot
+setup	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/controller_test.rb	/^  def setup$/;"	f	class:ControllerTest
+setup_for_generate_test	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def setup_for_generate_test$/;"	f
+show	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def show$/;"	f	class:ShowsController
+show	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def show(*ids)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+show_subscribed_count	/home/vojta/Dokumenty/vzs/shows/app/helpers/shows_helper.rb	/^  def show_subscribed_count(show)$/;"	f	class:ShowsHelper
+show_title?	/home/vojta/Dokumenty/vzs/shows/app/helpers/layout_helper.rb	/^  def show_title?$/;"	f	class:LayoutHelper
+sortable_element_js	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def sortable_element_js(element_id, options = {}) #:nodoc:$/;"	f	class:ActionView.Helpers.ScriptaculousHelper
+source_path	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def source_path$/;"	f	class:Less
+store_target_location	/home/vojta/Dokumenty/vzs/shows/lib/authentication.rb	/^  def store_target_location$/;"	f	class:Authentication
+stylesheet	/home/vojta/Dokumenty/vzs/shows/app/helpers/layout_helper.rb	/^  def stylesheet(*args)$/;"	f	class:LayoutHelper
+subscribe_other_link	/home/vojta/Dokumenty/vzs/shows/app/helpers/shows_helper.rb	/^  def subscribe_other_link(show)$/;"	f	class:ShowsHelper
+subscribed_class	/home/vojta/Dokumenty/vzs/shows/app/helpers/shows_helper.rb	/^  def subscribed_class(show, user)$/;"	f	class:ShowsHelper
+subscribed_count	/home/vojta/Dokumenty/vzs/shows/app/models/show.rb	/^  def subscribed_count$/;"	f	class:Show
+subscribed_notice	/home/vojta/Dokumenty/vzs/shows/app/helpers/shows_helper.rb	/^  def subscribed_notice(show, user)$/;"	f	class:ShowsHelper
+subscribed_to?	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def subscribed_to?(show)$/;"	f	class:User
+superadmin?	/home/vojta/Dokumenty/vzs/shows/app/models/user.rb	/^  def superadmin?$/;"	f	class:User
+teardown	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/controller_test.rb	/^  def teardown$/;"	f	class:ControllerTest
+teardown_for_generate_test	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def teardown_for_generate_test$/;"	f
+test	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/controller_test.rb	/^  def test$/;"	f	class:ExampleController
+test_create_invalid	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_create_invalid$/;"	f	class:ShowsControllerTest
+test_create_valid	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_create_valid$/;"	f	class:ShowsControllerTest
+test_custom_validations_are_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_custom_validations_are_reflected$/;"	f
+test_custom_validations_with_options_are_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_custom_validations_with_options_are_reflected$/;"	f
+test_destroy	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_destroy$/;"	f	class:ShowsControllerTest
+test_edit	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_edit$/;"	f	class:ShowsControllerTest
+test_format_is_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_format_is_reflected$/;"	f
+test_homepage	/home/vojta/Dokumenty/vzs/shows/test/performance/browsing_test.rb	/^  def test_homepage$/;"	f	class:BrowsingTest
+test_ignored_subvalidations_are_not_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_ignored_subvalidations_are_not_reflected$/;"	f
+test_index	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_index$/;"	f	class:ShowsControllerTest
+test_new	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_new$/;"	f	class:ShowsControllerTest
+test_numeric_integer_is_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_numeric_integer_is_reflected$/;"	f
+test_numeric_is_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_numeric_is_reflected$/;"	f
+test_sanity	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_sanity$/;"	f
+test_should_be_valid	/home/vojta/Dokumenty/vzs/shows/test/unit/show_test.rb	/^  def test_should_be_valid$/;"	f	class:ShowTest
+test_show	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_show$/;"	f	class:ShowsControllerTest
+test_string_limit_is_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_string_limit_is_reflected$/;"	f
+test_subvalidations_are_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_subvalidations_are_reflected$/;"	f
+test_update_invalid	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_update_invalid$/;"	f	class:ShowsControllerTest
+test_update_valid	/home/vojta/Dokumenty/vzs/shows/test/functional/shows_controller_test.rb	/^  def test_update_valid$/;"	f	class:ShowsControllerTest
+test_validates_presence_of_is_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_validates_presence_of_is_reflected$/;"	f
+test_validation_options_are_reflected	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def test_validation_options_are_reflected$/;"	f
+textile_help	/home/vojta/Dokumenty/vzs/shows/app/controllers/application_controller.rb	/^  def textile_help$/;"	f	class:ApplicationController
+title	/home/vojta/Dokumenty/vzs/shows/app/helpers/layout_helper.rb	/^  def title(page_title, show_title = true)$/;"	f	class:LayoutHelper
+to_dot_css	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/lib/less/more.rb	/^    def to_dot_css(path)$/;"	f
+toggle	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^					def toggle(*ids)$/;"	f	class:ActionView.Helpers.PrototypeHelper.JavaScriptGenerator.GeneratorMethods
+unarchive	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def unarchive$/;"	f	class:ShowsController
+unarchive	/home/vojta/Dokumenty/vzs/shows/app/models/show.rb	/^  def unarchive$/;"	f	class:Show
+up	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100419232100_create_users.rb	/^  def self.up$/;"	F	class:CreateUsers
+up	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424092337_create_shows.rb	/^  def self.up$/;"	F	class:CreateShows
+up	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424104917_add_columns_to_show.rb	/^  def self.up$/;"	F	class:AddColumnsToShow
+up	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100424114605_create_shows_users.rb	/^  def self.up$/;"	F	class:CreateShowsUsers
+up	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100425193409_add_paid_to_shows.rb	/^  def self.up$/;"	F	class:AddPaidToShows
+up	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100426100727_add_subscribed_to_subscriptions.rb	/^  def self.up$/;"	F	class:AddSubscribedToSubscriptions
+up	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100626210416_add_archived_to_show.rb	/^  def self.up$/;"	F	class:AddArchivedToShow
+up	/home/vojta/Dokumenty/vzs/shows/db/migrate/20100629122224_add_last_login_to_user.rb	/^  def self.up$/;"	F	class:AddLastLoginToUser
+update	/home/vojta/Dokumenty/vzs/shows/app/controllers/shows_controller.rb	/^  def update$/;"	f	class:ShowsController
+validates_something_selfcontained	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def self.validates_something_selfcontained(*cols)$/;"	F
+validates_something_weird	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/validation_reflection/test/validation_reflection_test.rb	/^  def self.validates_something_weird(*cols)$/;"	F
+value	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def value()$/;"	f	class:ActionView.Helpers.JavaScriptElementProxy
+value=	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def value=(value)$/;"	f	class:ActionView.Helpers.JavaScriptElementProxy
+vendor_rails?	/home/vojta/Dokumenty/vzs/shows/config/boot.rb	/^    def vendor_rails?$/;"	f	class:Rails
+visual_effect	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/jrails/lib/jrails.rb	/^			def visual_effect(name, element_id = false, js_options = {})$/;"	f	class:ActionView.Helpers.ScriptaculousHelper
+write_content	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def write_content file, content$/;"	f
+write_css	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def write_css file, content$/;"	f
+write_less	/home/vojta/Dokumenty/vzs/shows/vendor/plugins/more/test/test_helper.rb	/^def write_less file, content$/;"	f

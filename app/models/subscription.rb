@@ -5,8 +5,8 @@ class Subscription < ActiveRecord::Base
   validates_uniqueness_of :show_id, :scope => :user_id, :message => "Na ukázku jste již přihlášen"
   validate :number_of_people
 
-  named_scope :subscribed, :conditions => { :subscribed => true }
-  named_scope :not_subscribed, :conditions => { :subscribed => false }
+  scope :subscribed, :conditions => { :subscribed => true }
+  scope :not_subscribed, :conditions => { :subscribed => false }
 
   default_scope :order => 'created_at'
 

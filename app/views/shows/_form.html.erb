@@ -1,5 +1,4 @@
 <% semantic_form_for @show do |f| %>
-  <%= f.error_messages %>
   <% f.inputs do %>
     <%= f.input :name, :hint => 'Například: Myslibořice' %>
     <%= f.input :date, :hint => 'Počáteční den akce. Pokud je akce vícedenní, napište to do popisu.' %>
@@ -15,7 +14,7 @@
     <%= f.input :breakfast %>
     <%= f.input :lunch %>
     <%= f.input :dinner %>
-    <%= f.input :notes, :hint => "Můžete používat syntaxi #{link_to 'Textile', textile_help_path, :target => "_blank"}" %>
+    <%= f.input :notes, :hint => raw("Můžete používat syntaxi #{link_to 'Textile', textile_help_path, :target => '_blank'}") %>
   <% end -%>
   <%= f.buttons %>
 <% end %>

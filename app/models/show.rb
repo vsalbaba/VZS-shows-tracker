@@ -5,8 +5,8 @@ class Show < ActiveRecord::Base
                   :brigade_hours
 
   default_scope :order => :date
-  named_scope :archived, :conditions => {:archived => true}, :order => "date DESC"
-  named_scope :unarchived, :conditions => {:archived => nil}
+  scope :archived, :conditions => {:archived => true}, :order => "date DESC"
+  scope :unarchived, :conditions => {:archived => nil}
 
   validates_presence_of :name, :date
 

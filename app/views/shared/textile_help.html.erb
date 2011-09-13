@@ -15,7 +15,7 @@
         <pre><%= @list_example %></pre>
       </td>
       <td>
-        <%= RedCloth.new(@list_example).to_html %>
+        <%= raw RedCloth.new(@list_example).to_html %>
       </td>
     </tr>
 
@@ -27,7 +27,7 @@
         <pre><%= @emphasis_example %></pre>
       </td>
       <td>
-        <%= RedCloth.new(@emphasis_example).to_html %>
+        <%= raw RedCloth.new(@emphasis_example).to_html %>
       </td>
     </tr>
 
@@ -39,7 +39,7 @@
         <pre><%= @links_example %></pre>
       </td>
       <td>
-        <%= RedCloth.new(@links_example).to_html %>
+        <%= raw RedCloth.new(@links_example).to_html %>
       </td>
     </tr>
   </tbody>

@@ -17,14 +17,15 @@
 module Authentication
   def self.included(controller)
     controller.send :helper_method, :current_user, :logged_in?, :redirect_to_target_or_default
-    controller.filter_parameter_logging :password
   end
 
   def current_user
+    logger.debug session.inspect
     if session[:user_id] then
       begin
         @current_user ||= User.find(session[:user_id])
       rescue Exception => e
+        logger.debug e.inspect
         session[:user_id] = nil
       end
       return @current_user
@@ -39,6 +40,7 @@ module Authentication
 
   def login_required
     unless logged_in?
+      logger.debug current_user.inspect
       flash[:error] = "Pro přístup k akcím se musíte nejdříve přihlásit."
       store_target_location
       redirect_to login_url
@@ -50,10 +52,11 @@ module Authentication
     session[:return_to] = nil
   end
 
+
   private
 
   def store_target_location
-    session[:return_to] = request.request_uri
+    session[:return_to] = request.url
   end
 end
 

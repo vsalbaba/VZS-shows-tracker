@@ -1,5 +1,5 @@
-<% form_tag join_show_path(show) do %>
-  <% field_set_tag 'Přihlásit jiné uživatele' do %>
+<%= form_tag join_show_path(show) do %>
+  <%= field_set_tag 'Přihlásit jiné uživatele' do %>
     <%= select_tag 'user_id', options_for_select(User.all.map{|u| [u.full_name, u.id]}) -%>
     <%= hidden_field_tag 'subscribed', true %>
     <%= submit_tag 'Přidat' %>

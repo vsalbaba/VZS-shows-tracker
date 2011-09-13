@@ -1,0 +1,24 @@
+<% form_for @user do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname %>
+  </p>
+  <p>
+    <%= f.label :vzs_id %><br />
+    <%= f.text_field :vzs_id %>
+  </p>
+  <p>
+    <%= f.label :auth_level %><br />
+    <%= f.text_field :auth_level %>
+  </p>
+  <p>
+    <%= f.label :last_login %><br />
+    <%= f.datetime_select :last_login %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
