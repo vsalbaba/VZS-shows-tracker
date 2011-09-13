@@ -1,10 +1,17 @@
 source 'http://rubygems.org'
 
+group :production do
+  gem 'pg'
+end
+group :development do
+  gem 'mysql2', '~> 0.2.0'
+end
+
 gem 'rails', '3.0.9'
 gem 'yard', '0.7.2'
 gem 'formtastic', '~> 1.2.3'
 gem 'authlogic'
-gem 'mysql2', '~> 0.2.0'
+
 gem 'cancan'
 gem 'will_paginate'
 gem 'RedCloth'
