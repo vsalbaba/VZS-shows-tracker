@@ -10,14 +10,16 @@
   </head>
   <body>
     <div id="container">
-      <div id="navigation">
-        <%= link_to "Aktuální akce", shows_path %> 
-        | <%= link_to "Proběhlé akce", archived_shows_path %>
-        <% if can? :index, :stats %>
-        | <%= link_to "Statistiky", stats_path %>
-        <% end %>
-        | <%= link_to "Moje statistiky", stats_user_path(current_user) %>
-      </div>
+      <% if current_user %>
+        <div id="navigation">
+          <%= link_to "Aktuální akce", shows_path %> 
+          | <%= link_to "Proběhlé akce", archived_shows_path %>
+          <% if can?(:index, :stats) %>
+          | <%= link_to "Statistiky", stats_path %>
+          <% end %>
+          | <%= link_to "Moje statistiky", stats_user_path(current_user) %>
+        </div>
+      <% end %>
       <div id="login_box">
         <% if logged_in? %>
           <%= current_user.full_name %>
