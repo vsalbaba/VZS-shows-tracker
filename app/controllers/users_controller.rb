@@ -41,4 +41,14 @@ class UsersController < ApplicationController
     flash[:notice] = "Successfully destroyed user."
     redirect_to users_url
   end
+
+  def shows
+    
+  end
+
+  def stats
+    @user = User.find params[:id]
+    @statistic = Statistic.new @user
+    @shows = @statistic.shows
+  end
 end

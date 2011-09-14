@@ -1,6 +1,10 @@
 Shows::Application.routes.draw do
 
-  resources :users
+  resources :users do
+    member do
+      get :stats
+    end
+  end
 
   resources :shows do
     member do
@@ -23,6 +27,8 @@ Shows::Application.routes.draw do
   match 'login' => 'sessions#new', :as => 'login'
 
   match 'help' => 'application#textile_help', :as => 'textile_help'
+
+  match 'stats' => 'statistics#stats', :as => 'stats'
 
   resources :sessions
 end

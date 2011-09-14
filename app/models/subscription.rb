@@ -11,9 +11,10 @@ class Subscription < ActiveRecord::Base
 
   default_scope :order => 'created_at'
 
-
   def number_of_people
-    errors.add(:base, "Prilis mnoho lidi na ukazce") if self.subscribed and self.show.people and (self.show.subscribed_count >= self.show.people)
+    if self.subscribed and self.show.people and (self.show.subscribed_count >= self.show.people)
+      errors.add(:base, "Prilis mnoho lidi na ukazce") 
+    end
   end
 end
 

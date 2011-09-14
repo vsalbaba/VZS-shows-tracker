@@ -18,7 +18,7 @@ class Show < ActiveRecord::Base
 
   def check_hours
     logger.debug "brigade_hours #{brigade_hours.inspect}"
-    brigade_hours ||= payed_hours
+    self[:brigade_hours] ||= payed_hours
     logger.debug "brigade_hours #{brigade_hours.inspect}"
   end
 

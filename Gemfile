@@ -10,6 +10,7 @@ end
 gem 'rails', '3.0.9'
 gem 'yard', '0.7.2'
 gem 'formtastic', '~> 1.2.3'
+gem 'validation_reflection'
 gem 'authlogic'
 
 gem 'cancan'
@@ -24,11 +25,17 @@ group :development do
 end
 
 group :test , :development do
+  gem "rspec"
   gem "guard"
-	gem "factory_girl_rails", "~> 1.0.1"
+  gem "guard-rspec"
+  gem "guard-livereload"
+	gem "factory_girl_rails", "~> 1.2.0"
   gem 'shoulda'
   gem 'libnotify'
+  gem 'rb-inotify'
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
   gem "rails3-generators"
 end
+
+

@@ -14,6 +14,7 @@ class Ability
       can :manage, :all
       can :subscribe_others, Show
     else
+      cannot :index, :stats
       cannot :kick, Show
       cannot :unarchive, Show
       cannot :archive, Show

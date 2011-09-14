@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
+    <title><%= yield(:title) || "Untitled" %></title>
     <%= stylesheet_link_tag 'application', 'formtastic', 'formtastic_changes' %>
     <%= javascript_include_tag :defaults %>
     <%= csrf_meta_tag %>
@@ -11,7 +11,12 @@
   <body>
     <div id="container">
       <div id="navigation">
-        <%= link_to "Aktuální akce", shows_path %> | <%= link_to "Proběhlé akce", archived_shows_path %> 
+        <%= link_to "Aktuální akce", shows_path %> 
+        | <%= link_to "Proběhlé akce", archived_shows_path %>
+        <% if can? :index, :stats %>
+        | <%= link_to "Statistiky", stats_path %>
+        <% end %>
+        | <%= link_to "Moje statistiky", stats_user_path(current_user) %>
       </div>
       <div id="login_box">
         <% if logged_in? %>
