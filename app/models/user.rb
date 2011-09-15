@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   validates_presence_of :vzs_id, :name, :surname, :auth_level
   validates_uniqueness_of :vzs_id
 
-  default_scope :order => 'surname, name'
+  default_scope :order => 'surname ASC, name ASC'
 
   def admin?
     self.auth_level == 2
@@ -57,7 +57,7 @@ class User < ActiveRecord::Base
   end
 
   def full_name
-    @full_name ||= "#{self.name} #{self.surname}"
+    @full_name ||= "#{self.surname} #{self.name}"
   end
 
   private
