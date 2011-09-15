@@ -1,5 +1,9 @@
 <% title 'Statistiky' %>
-
+<%= form_tag nil, :method => :get do %>
+  <%= text_field_tag :from_date, @from_date && l(@from_date), :id => 'from_date', :class => 'ui-daterange-picker' %>
+  <%= text_field_tag :to_date, l(@to_date), :id => 'to_date', :class => 'ui-daterange-picker' %>
+  <%= submit_tag 'Zobrazit' %>
+<% end %>
 <table>
   <thead>
     <tr>
