@@ -29,7 +29,7 @@
 </div>
 <div id='notes'>
   <h2>Poznámky</h2>
-  <%= RedCloth.new(@show.notes).to_html %>
+  <%= raw RedCloth.new(@show.notes).to_html %>
 </div>
 
 <div id='people'>
