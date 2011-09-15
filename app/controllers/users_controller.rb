@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter :login_required
   def index
     @users = User.all
   end
@@ -48,7 +49,14 @@ class UsersController < ApplicationController
 
   def stats
     @user = User.find params[:id]
-    @statistic = Statistic.new @user
+    @from_date = parse_date(params[:from_date])
+    @to_date = parse_date(params[:to_date]) || Date.current
+    @statistic = Statistic.new @user, :from => @from_date, :to => @to_date
     @shows = @statistic.shows
+  end
+
+  private
+  def parse_date datestring
+     Date.strptime(datestring, '%d. %m. %Y') if datestring.present?
   end
 end
