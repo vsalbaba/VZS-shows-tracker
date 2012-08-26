@@ -33,6 +33,11 @@ class User < ActiveRecord::Base
     if Rails.env.development? or Rails.env.test?
       return User.find_by_vzs_id('080')
     end
+    # vyzkouset jestli nemame u uzivatele 
+    @user = User.find_by_vzs_id(login)
+    if @user then
+      return @user
+    end
     url = build_url_for(login, pass)
     xml = open url
     @user = User.find_or_create_from_xml(login, xml)
