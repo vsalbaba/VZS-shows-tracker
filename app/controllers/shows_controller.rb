@@ -3,7 +3,7 @@ class ShowsController < ApplicationController
   before_filter :login_required, :except => :feed
   before_filter :find_show, :only => [:join, :kick, :show, :edit, :update, :destroy, :archive, :unarchive]
   def index
-    @shows = Show.unarchived
+    @shows = Show.unarchived.order('date DESC')
   end
 
   def feed
@@ -14,7 +14,7 @@ class ShowsController < ApplicationController
   end
 
   def archived
-    @shows = Show.archived.paginate(:page => params[:page])
+    @shows = Show.archived.order('date DESC').paginate(:page => params[:page])
   end
 
   def join

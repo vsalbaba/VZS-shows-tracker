@@ -9,6 +9,7 @@
     <th scope="col">Ukázka</td>
     <th scope="col">Placených</td>
     <th scope="col">Brigádnických</td>
+    <th scope="col">Na klubovně?</td>
   </thead>
   <tbody>
     <% @shows.each do |show| %>
@@ -16,6 +17,7 @@
       <td><%= link_to [l(show.date), show.name].join(" - "), show_path(show) %></td>
       <td><%= show.payed_hours if @user.subscriptions.find_by_show_id(show.id).wants_payed %></td>
       <td><%= show.brigade_hours unless @user.subscriptions.find_by_show_id(show.id).wants_payed %></td>
+      <td><%= 'X' if show.club %>
     </tr>
     <% end %>
   </tbody>

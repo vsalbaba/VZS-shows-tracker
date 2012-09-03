@@ -3,11 +3,11 @@ class Show < ActiveRecord::Base
   attr_accessible :name, :date, :meet_time, :end_time,
                   :payed_hours, :people, :meet_at, :contact, :breakfast,
                   :lunch, :dinner, :notes, :description, :paid, :archived,
-                  :brigade_hours
+                  :brigade_hours, :club
 
-  default_scope :order => :date
-  scope :archived, :conditions => {:archived => true}, :order => "date DESC"
+  scope :archived, :conditions => {:archived => true}
   scope :unarchived, :conditions => {:archived => nil}
+  scope :club, :conditions => {:club => true}
 
   validates_presence_of :name, :date
 

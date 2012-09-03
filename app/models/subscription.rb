@@ -4,7 +4,7 @@ class Subscription < ActiveRecord::Base
   belongs_to :show
 
   validates_uniqueness_of :show_id, :scope => :user_id, :message => "Na ukázku jste již přihlášen"
-  validate :number_of_people
+  #validate :number_of_people
 
   scope :subscribed, :conditions => { :subscribed => true }
   scope :not_subscribed, :conditions => { :subscribed => false }

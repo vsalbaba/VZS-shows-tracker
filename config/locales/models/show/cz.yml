@@ -19,6 +19,7 @@ cz:
         notes: Poznámky
         description: Popis
         paid: Druh
+        club: Brigáda na klubovně
   formtastic:
     actions:
       show:

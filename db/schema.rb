@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100916161729) do
+ActiveRecord::Schema.define(:version => 20120903203712) do
 
   create_table "shows", :force => true do |t|
     t.string   "name"
@@ -31,7 +31,16 @@ ActiveRecord::Schema.define(:version => 20100916161729) do
     t.boolean  "paid"
     t.boolean  "archived"
     t.integer  "brigade_hours"
+    t.boolean  "club"
   end
+
+  create_table "shows_users", :id => false, :force => true do |t|
+    t.integer "show_id"
+    t.integer "user_id"
+  end
+
+  add_index "shows_users", ["show_id"], :name => "index_shows_users_on_show_id"
+  add_index "shows_users", ["user_id"], :name => "index_shows_users_on_user_id"
 
   create_table "subscriptions", :force => true do |t|
     t.integer  "show_id"
