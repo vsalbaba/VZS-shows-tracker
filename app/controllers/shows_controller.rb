@@ -3,7 +3,7 @@ class ShowsController < ApplicationController
   before_filter :login_required, :except => :feed
   before_filter :find_show, :only => [:join, :kick, :show, :edit, :update, :destroy, :archive, :unarchive]
   def index
-    @shows = Show.unarchived.order('date DESC')
+    @shows = Show.unarchived.order('date ASC')
   end
 
   def feed
