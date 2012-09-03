@@ -18,7 +18,7 @@
     <% @statistics.each do |statistic| %>
     <tr>
       <td><%= statistic.user.vzs_id %></td>
-      <td><%= link_to statistic.user.full_name, stats_user_path(statistic.user, :from_date => @from_date, :to_date => @to_date) %></td>
+      <td><%= link_to statistic.user.full_name, stats_user_path(statistic.user, :from_date => (@from_date && l(@from_date)), :to_date => (@to_date && l(@to_date))) %></td>
       <td><%= statistic.brigade_hours %></td>
       <td><%= statistic.paid_hours %></td>
       <td><%= number_to_currency statistic.pay %></td>
