@@ -5,7 +5,9 @@
 #   helper :layout
 module LayoutHelper
   def title(page_title, show_title = true)
-    @content_for_title = page_title.to_s
+    content_for(:title) do
+      page_title.to_s
+    end
     @show_title = show_title
   end
   
