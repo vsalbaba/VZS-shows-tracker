@@ -7,7 +7,7 @@ group :development do
   gem 'mysql2', '~> 0.2.0'
 end
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.0.20'
 gem 'yard', '0.7.2'
 gem 'formtastic', '~> 1.2.3'
 gem 'validation_reflection'
